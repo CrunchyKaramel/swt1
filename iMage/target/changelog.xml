@@ -1,4 +1,57 @@
 <changelog><commit>
+					<time>1493908644</time>
+					<sha1>5d6c46de6c8a316da94aac8202943a61b84e23aa</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Copied files into jmjrst.main.
+
+Copied following files from the last test project over to jmjrst.main:
+
+ - src/assembly/src.xml
+ - src/test/resources/checkstyle_swt1.xml
+ - checkstyle.launch
+ - integration-test.launch</msg>
+				</commit><commit>
+					<time>1493908388</time>
+					<sha1>bd4bfdff25f865e05e8e2bbdbfb40ebec9030d78</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Applied ub1_a1_g_patch to jmjrst.main.
+
+Applied a patch to resolve some issues with ImageFormatException.</msg>
+				</commit><commit>
+					<time>1493908216</time>
+					<sha1>3df07b03284a3bac3e7c647aab5eda156b8e1d1e</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Updated project.
+
+Updated the Maven project iMage to see the changes made in eclipse.</msg>
+				</commit><commit>
+					<time>1493908146</time>
+					<sha1>e6a33844b0954a5433617a2987b3ebcf85b3ccb1</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added jmjrst to jmjrst.main.
+
+Copied the files of jmjrst to the module jmjrst.main.</msg>
+				</commit><commit>
+					<time>1493907947</time>
+					<sha1>04a0dd1c1d0f4a625c9ea0024bc951b0882bdf26</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Created jmjrst.main.
+
+Created a new simple Maven module called jmjrst.main, which is part of iMage.</msg>
+				</commit><commit>
+					<time>1493907846</time>
+					<sha1>d983e7563efa160b9e3e551dad68f4d65aa6378c</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Packaged iMage.
+
+Packaged iMage to see if it works.</msg>
+				</commit><commit>
 					<time>1493907768</time>
 					<sha1>7e352813ead2c098a6eddfcf21fa8694f45139a1</sha1>
 					<author>Joshua Eilebrecht</author>
