@@ -1,4 +1,46 @@
 <changelog><commit>
+					<time>1493911951</time>
+					<sha1>049a48e6d7eea7f708f05ce14a70e4ed0906f2df</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Corrected code style error.
+
+Corrected a code style error in line 53 of Consumer where the if-statement was missing curly brackets.</msg>
+				</commit><commit>
+					<time>1493911778</time>
+					<sha1>30a75c28a87349cbab603130db7000d3b7bda598</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Fixed code style error.
+
+Fixed a code style error in line 62 ofMain where the Main class wasn't declared as final.</msg>
+				</commit><commit>
+					<time>1493911511</time>
+					<sha1>bb3bb621d96afcfee08202dd2e41635958776b24</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Fixed code style error.
+
+Fixed a code style error in line 194 of GallerieDialog where a curly bracket was misplaced.</msg>
+				</commit><commit>
+					<time>1493911196</time>
+					<sha1>d40bc62fb163dcb3fb2765ca126c768cf79ab2f2</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added swt1 checkstyle.
+
+Added the swt1 checkstyle from jmjrst.main/src/main/test. The project now gets checked with this checkstyle.</msg>
+				</commit><commit>
+					<time>1493910929</time>
+					<sha1>6549ece51e858969d4d36280495093fdeda166cb</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Checked if iMage/.gitignore functions correctly.
+
+Checked if .gitignore in iMage ignores the folder target. For some reason it does not ignore it.
+
+Signed-off-by: Joshua Eilebrecht &lt;joshua_eilebrecht@web.de&gt;</msg>
+				</commit><commit>
 					<time>1493910798</time>
 					<sha1>cbc388ec8ae0eca30d845fe4a411bb0c4a2c1025</sha1>
 					<author>Joshua Eilebrecht</author>
