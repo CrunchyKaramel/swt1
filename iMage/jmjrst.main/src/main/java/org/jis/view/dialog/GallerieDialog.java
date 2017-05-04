@@ -191,8 +191,7 @@ public class GallerieDialog extends JDialog {
         Thread x = new Thread(new Runnable()
         {
 
-          public void run()
-          {
+          public void run() {
             try
             {
               if (getSelectedLayout().getPreviewImage() != null) setPreview(new Thumbnail(getSelectedLayout().getPreviewImage(), 300, 240));
