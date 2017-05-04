@@ -1,4 +1,20 @@
 <changelog><commit>
+					<time>1493910798</time>
+					<sha1>cbc388ec8ae0eca30d845fe4a411bb0c4a2c1025</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Edited iMage/.gitignore.
+
+Added target in iMage to .gitignore so git ignores the repackaged projects.</msg>
+				</commit><commit>
+					<time>1493910677</time>
+					<sha1>1029a0d82db4cef29c150da7b3d3487ce32f27c5</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added addClasspath to jmjrst.main manifest.
+
+Set addClasspath to true in the manifest of jmjrst.main. Also repackaged the project again.</msg>
+				</commit><commit>
 					<time>1493910384</time>
 					<sha1>40008d50b5e5a469b726b366bd708fad0ce4aeff</sha1>
 					<author>Joshua Eilebrecht</author>
