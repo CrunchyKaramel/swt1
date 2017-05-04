@@ -5,7 +5,7 @@
     <artifactId>iMage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>jmjrst.main</artifactId>
+  <artifactId>1939691</artifactId>
   <build>
 		<plugins>
 			<plugin>
@@ -22,4 +22,5 @@
 			</plugin>
 		</plugins>
 	</build>
+  <groupId>swt1.ub1.a1</groupId>
 </project>
