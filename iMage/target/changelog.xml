@@ -1,4 +1,13 @@
 <changelog><commit>
+					<time>1493908888</time>
+					<sha1>e2e2fae54f38a2ce2b368c690078f9384fee5d54</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Defined main class of jmjrst.main and packaged iMage and jmjrst.main.
+
+Edited the pom file of jmjrst.main to define the main class of jmjrst.main so the packaged jmjrst.main become executable.
+Furthermore tested whether jmjrst.main and iMage is still able to get packaged (it packed both classes successfully).</msg>
+				</commit><commit>
 					<time>1493908644</time>
 					<sha1>5d6c46de6c8a316da94aac8202943a61b84e23aa</sha1>
 					<author>Joshua Eilebrecht</author>

@@ -79,3 +79,8 @@
 2017-05-04 16:44:14,292 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-05-04 16:44:29,186 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
 2017-05-04 16:44:29,186 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-05-04 16:46:58,440 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:jmjrst.main:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/jmjrst.main/pom.xml.
+2017-05-04 16:46:58,685 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:46:58,703 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-04 16:46:58,706 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:46:58,707 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

@@ -14,7 +14,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.maventest.App</mainClass>
+							<mainClass>org.jis.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
