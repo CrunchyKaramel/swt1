@@ -84,3 +84,21 @@
 2017-05-04 16:46:58,703 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-05-04 16:46:58,706 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-04 16:46:58,707 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-04 16:47:56,908 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:47:56,908 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2017-05-04 16:47:56,920 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:47:56,921 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-04 16:48:00,253 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-05-04 16:48:00,367 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-05-04 16:48:00,407 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-05-04 16:48:00,471 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/lez-maven-plugin/0.1.13-SNAPSHOT/maven-metadata.xml
+2017-05-04 16:48:00,644 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:jmjrst.main:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/jmjrst.main/pom.xml.
+2017-05-04 16:48:00,744 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jmjrst.main/src/main/java
+2017-05-04 16:48:00,744 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jmjrst.main/src/main/resources
+2017-05-04 16:48:00,745 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jmjrst.main/src/test/java
+2017-05-04 16:48:00,745 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jmjrst.main/src/test/resources
+2017-05-04 16:48:00,791 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-05-04 16:48:01,361 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:48:01,365 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2017-05-04 16:48:01,378 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 16:48:01,379 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
