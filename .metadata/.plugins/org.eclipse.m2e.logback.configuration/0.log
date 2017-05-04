@@ -410,3 +410,9 @@
 2017-05-04 18:29:49,047 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2017-05-04 18:29:55,693 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
 2017-05-04 18:42:12,252 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|https://repo.maven.apache.org/maven2 in 736559 ms
+2017-05-04 19:03:34,073 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/pom.xml.
+2017-05-04 19:03:35,938 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub1.a1:1939691:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/jmjrst.main/pom.xml.
+2017-05-04 19:03:40,053 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 19:03:40,057 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-05-04 19:03:40,087 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 19:03:40,088 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
