@@ -272,3 +272,31 @@
 2017-05-04 17:03:37,219 [Worker-30] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
 2017-05-04 17:03:45,483 [Worker-29] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
 2017-05-04 17:03:45,483 [Worker-29] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-05-04 17:09:16,996 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:jmjrst.main:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/jmjrst.main/pom.xml.
+2017-05-04 17:09:17,246 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:17,248 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-04 17:09:17,250 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:17,250 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-04 17:09:20,661 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:20,661 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-05-04 17:09:20,666 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:20,667 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-04 17:09:23,488 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-05-04 17:09:23,576 [Worker-28] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-05-04 17:09:23,639 [Worker-28] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-05-04 17:09:23,655 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/pom.xml.
+2017-05-04 17:09:23,697 [Worker-28] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/lez-maven-plugin/0.1.13-SNAPSHOT/maven-metadata.xml
+2017-05-04 17:09:23,829 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:jmjrst.main:0.0.1-SNAPSHOT @ /home/joshua/swt1/iMage/jmjrst.main/pom.xml.
+2017-05-04 17:09:23,946 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jmjrst.main/src/main/java
+2017-05-04 17:09:23,946 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jmjrst.main/src/main/resources
+2017-05-04 17:09:23,947 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jmjrst.main/src/test/java
+2017-05-04 17:09:23,947 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jmjrst.main/src/test/resources
+2017-05-04 17:09:23,990 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-05-04 17:09:24,440 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:24,441 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-05-04 17:09:24,455 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-04 17:09:24,456 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-04 17:09:35,179 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
+2017-05-04 17:09:35,179 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-05-04 17:09:47,116 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
+2017-05-04 17:09:47,116 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package

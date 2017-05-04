@@ -14,6 +14,7 @@
 				<configuration>
 					<archive>
 						<manifest>
+						    <addClasspath>true</addClasspath>
 							<mainClass>org.jis.Main</mainClass>
 						</manifest>
 					</archive>
