@@ -1,0 +1,41 @@
+<changelog><commit>
+					<time>1493907768</time>
+					<sha1>7e352813ead2c098a6eddfcf21fa8694f45139a1</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added iMage/src/assembly/src.xml
+
+Added src.xml to help iMage find its parent project.</msg>
+				</commit><commit>
+					<time>1493907701</time>
+					<sha1>f5f73841af91f3925dde564ef7353424e07e807e</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added repository to iMage.
+
+Manually edited the pom file of iMage to add a repository to iMage so it can find its parent project.</msg>
+				</commit><commit>
+					<time>1493907613</time>
+					<sha1>0cd8255c4563d55f8fefc5efc8eb1c9727a40ee6</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Created iMage.
+
+Created a new simple Maven project called &quot;iMage&quot;.</msg>
+				</commit><commit>
+					<time>1493907397</time>
+					<sha1>09c5c9f560929810865be5c7ee84bfeecfcdb602</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Added .gitignore.
+
+Added .gitignore into the swt1 workspace.</msg>
+				</commit><commit>
+					<time>1493907322</time>
+					<sha1>0cd39a310f5e7ed381c60ef848059e6d38c69544</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Initialized repository.
+
+Initialized the git repository in the swt1 workspace.</msg>
+				</commit></changelog>
