@@ -1,4 +1,12 @@
 <changelog><commit>
+					<time>1493909359</time>
+					<sha1>6324e7eb66437efb9d7f54a2cfd5a68bd4ab660b</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Packaged jmjrst.main.
+
+Packaged the module jmjrst.main for testing purposes.</msg>
+				</commit><commit>
 					<time>1493909317</time>
 					<sha1>4d89aa0ed5eb7e76bf524596b9b3a3ab6831bfb0</sha1>
 					<author>Joshua Eilebrecht</author>
