@@ -1,4 +1,28 @@
 <changelog><commit>
+					<time>1493909317</time>
+					<sha1>4d89aa0ed5eb7e76bf524596b9b3a3ab6831bfb0</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Updated jmjrst.main.
+
+Updated the module jmjrst.main so it can be packaged correctly.</msg>
+				</commit><commit>
+					<time>1493909272</time>
+					<sha1>019b11f3a4499221fb5d8400052039d9142081fc</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Corrected main class definition in jmjrst.main.
+
+Corrected a mistake made in the pom of jmjrst.main, where it defined the wrong main class.</msg>
+				</commit><commit>
+					<time>1493909179</time>
+					<sha1>ec824cb472c28b2a18c08c7ffeb81d4c2022f260</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Updated project.
+
+Updated the whole Maven project iMage to make the manifest of jmjrst.main include the main class of jmjrst.main.</msg>
+				</commit><commit>
 					<time>1493908888</time>
 					<sha1>e2e2fae54f38a2ce2b368c690078f9384fee5d54</sha1>
 					<author>Joshua Eilebrecht</author>
