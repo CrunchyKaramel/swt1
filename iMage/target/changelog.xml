@@ -1,4 +1,20 @@
 <changelog><commit>
+					<time>1493912202</time>
+					<sha1>06cf8265ab87eced3f5505d6f7520c9817a6dc3b</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Edited GroupID and ArtifactID of jmjrst.main.
+
+Edited the groupID and ArtifactID of jmjrst.main to meet requirements.</msg>
+				</commit><commit>
+					<time>1493912086</time>
+					<sha1>99d6711ff407a4a2d29e1d051086ef2d89338a68</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/master</branches>
+					<msg>Updated and packaged project.
+
+Updated and packaged iMage and jmjrst.main for turning it in.</msg>
+				</commit><commit>
 					<time>1493911951</time>
 					<sha1>049a48e6d7eea7f708f05ce14a70e4ed0906f2df</sha1>
 					<author>Joshua Eilebrecht</author>

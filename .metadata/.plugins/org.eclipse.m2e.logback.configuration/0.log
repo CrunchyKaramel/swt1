@@ -383,3 +383,5 @@
 2017-05-04 17:35:40,401 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
 2017-05-04 17:35:40,409 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-04 17:35:40,409 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-04 17:36:45,995 [Worker-38] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
+2017-05-04 17:36:45,995 [Worker-38] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
