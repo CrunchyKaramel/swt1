@@ -23,8 +23,6 @@ public class GeneratorTest {
 	// all necessary objects for the test
 	static Generator testGenerator;
 	static BufferedImage picture;
-	static BufferedImage picture90deg;
-	static BufferedImage picture270deg;
 
 	/**
 	 * Creates all necessary objects for the tests.
@@ -48,43 +46,6 @@ public class GeneratorTest {
 			reader.setInput(iis, true);
 			ImageReadParam params = reader.getDefaultReadParam();
 			picture = reader.read(0, params);
-			imeta = reader.getImageMetadata(0);
-		} catch (IOException e) {
-			System.err.println("Error while reading File: " + file.getAbsolutePath());
-			e.printStackTrace();
-			return;
-		}
-		// reads in the 90 degree rotated picture
-		url = GeneratorTest.class.getResource("picture90deg.jpg");
-		file = new File(url.getPath());
-		picture90deg = null;
-		imeta = null;
-
-		try {
-			ImageInputStream iis = ImageIO.createImageInputStream(file);
-			ImageReader reader = ImageIO.getImageReadersByFormatName("jpg").next();
-			reader.setInput(iis, true);
-			ImageReadParam params = reader.getDefaultReadParam();
-			picture90deg = reader.read(0, params);
-			imeta = reader.getImageMetadata(0);
-		} catch (IOException e) {
-			System.err.println("Error while reading File: " + file.getAbsolutePath());
-			e.printStackTrace();
-			return;
-		}
-
-		// reads in the 270 degree rotated picture
-		url = GeneratorTest.class.getResource("picture270deg.jpg");
-		file = new File(url.getPath());
-		picture270deg = null;
-		imeta = null;
-
-		try {
-			ImageInputStream iis = ImageIO.createImageInputStream(file);
-			ImageReader reader = ImageIO.getImageReadersByFormatName("jpg").next();
-			reader.setInput(iis, true);
-			ImageReadParam params = reader.getDefaultReadParam();
-			picture270deg = reader.read(0, params);
 			imeta = reader.getImageMetadata(0);
 		} catch (IOException e) {
 			System.err.println("Error while reading File: " + file.getAbsolutePath());
@@ -135,10 +96,10 @@ public class GeneratorTest {
 		int height = picture.getHeight();
 
 		// Loop over every pixel.
-		for (int y = 0; y < width; y++) {
-			for (int x = 0; x < height; x++) {
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
 				// Compare the pixels for equality.
-				if (picture.getRGB(x, y) != result.getRGB(y, result.getHeight() - x)) {
+				if (picture.getRGB(x, y) != result.getRGB(height - 1 - y, x)) {
 					fail("Pictures do not match.");
 				}
 			}
@@ -158,10 +119,10 @@ public class GeneratorTest {
 		int height = picture.getHeight();
 
 		// Loop over every pixel.
-		for (int y = 0; y < width; y++) {
-			for (int x = 0; x < height; x++) {
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
 				// Compare the pixels for equality.
-				if (picture.getRGB(x, y) != result.getRGB(result.getWidth() - y, x)) {
+				if (picture.getRGB(x, y) != result.getRGB(y, width - 1 - x)) {
 					fail("Pictures do not match.");
 				}
 			}

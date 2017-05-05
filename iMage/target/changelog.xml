@@ -1,4 +1,12 @@
 <changelog><commit>
+					<time>1494000853</time>
+					<sha1>28941d1c493cf0f8686adac90d715aad91bf58f6</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Edited testRotateBifferedImage90Degrees and testRotateImage270Degrees.
+
+Removed useless lines that checked if width and height of the original picture and the resulted matched, although this was checked earlier already.</msg>
+				</commit><commit>
 					<time>1494000592</time>
 					<sha1>f208e2a3fb55c626bfbb476948cec97b1c6bd854</sha1>
 					<author>Joshua Eilebrecht</author>
