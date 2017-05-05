@@ -1,4 +1,29 @@
 <changelog><commit>
+					<time>1493997121</time>
+					<sha1>7306e32db88dbdc7c307eb6ba8cf3a4ccf8d7d98</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Changed @Before and @After and edited setup().
+
+Changed @Before to @BeforeClass as the loaded/created objects do not change between tests.
+Added code to load in the 90 degree rotated variant of picture.jpg and the 270 degree rotated one.</msg>
+				</commit><commit>
+					<time>1493996414</time>
+					<sha1>35ecc687f50c575a69be351766b93213d28e24df</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Added resources for GeneratorTest.
+
+Added a version of picture.jpg that is rotated by 90 degrees and one that is rotated by 270 degrees.</msg>
+				</commit><commit>
+					<time>1493983526</time>
+					<sha1>6e63ff541121b8cbb11e2ccd09fb4fe830392d91</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Edited 2 tests in GeneratorTest.
+
+Changed the radian measure in the tests testRotateBufferedImage90Degrees and testRotateBufferedImage270Degrees.</msg>
+				</commit><commit>
 					<time>1493983273</time>
 					<sha1>155642846bb82e4e6c61051f58c87910778d5358</sha1>
 					<author>Joshua Eilebrecht</author>

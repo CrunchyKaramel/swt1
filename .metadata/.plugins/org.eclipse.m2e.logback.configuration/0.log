@@ -588,3 +588,9 @@
 2017-05-05 17:09:42,853 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-05-05 17:09:42,855 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-05 17:09:42,856 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-05-05 17:13:05,664 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/joshua/swt1/iMage
+2017-05-05 17:13:05,666 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-05-05 17:13:05,814 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 17:13:05,814 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-05 17:13:05,816 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 17:13:05,816 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
