@@ -16,6 +16,58 @@
 		</tr>
 	</thead>
 	<tr>
+		<td>1493982079</td>
+		<td>4e383a6fe5e0c3ec151a8cf930cfdf0325417dfd</td>
+		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Fri May 5 13:01:19 2017 +0200]</td>
+		<td>refs/heads/RotateImageTest</td>
+		<td><p>Tweaked code of testRotateBufferedImage() and corrected a grammar mistake of its description.
+
+Removed result and put the returned value of rotateImage(...) directly as the actual value in assertEqual.
+Furthermore in the description the word "whether" was replaced with "if".
+</p></td>
+	</tr>
+	<tr>
+		<td>1493981895</td>
+		<td>72fe531f154e7aa2ac30332d597d6bb879fc55e1</td>
+		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Fri May 5 12:58:15 2017 +0200]</td>
+		<td>refs/heads/RotateImageTest</td>
+		<td><p>Added test to GeneratorTest.
+
+Added a test to check if rotateImage will return null when no picture is given.
+</p></td>
+	</tr>
+	<tr>
+		<td>1493981703</td>
+		<td>15580a1c00c922e31db5edad2b13116043554874</td>
+		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Fri May 5 12:55:03 2017 +0200]</td>
+		<td>refs/heads/RotateImageTest</td>
+		<td><p>Added test to GeneratorTest.
+
+Added a test where it is checked if rotateImage() returns the same image when a rotation value of 0.0 is given.
+</p></td>
+	</tr>
+	<tr>
+		<td>1493980929</td>
+		<td>f1ce935d423855b5672e167866cffdff9471ec26</td>
+		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Fri May 5 12:42:09 2017 +0200]</td>
+		<td>refs/heads/RotateImageTest</td>
+		<td><p>Added Javadoc comment to setup(), formated GeneratorTest and Added save action.
+
+Added a Javadoc comment to clarify to why it exists, formated the class to get rid of any unwanted code style errors and also changed the setting so an edited class now gets automatically formated.
+This means that any formating will no longer be documented in any further commits.
+</p></td>
+	</tr>
+	<tr>
+		<td>1493980545</td>
+		<td>626169a807937d2a93a98897baeb3461d1e60dd7</td>
+		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Fri May 5 12:35:45 2017 +0200]</td>
+		<td>refs/heads/RotateImageTest</td>
+		<td><p>Edited setup() for GeneratorTest.
+
+Put some objects outside setup() so tests can interact with them too.
+</p></td>
+	</tr>
+	<tr>
 		<td>1493921924</td>
 		<td>502ce55d79ae3e569aada634b441efbc63be78d6</td>
 		<td>PersonIdent[Joshua Eilebrecht, joshua_eilebrecht@web.de, Thu May 4 20:18:44 2017 +0200]</td>
@@ -327,6 +379,6 @@ Initialized the git repository in the swt1 workspace.
 	</tr>
 </table>
 
-<p>generated on Fri May 05 12:25:07 CEST 2017</p>
+<p>generated on Fri May 05 13:01:27 CEST 2017</p>
 </body>
 </html>

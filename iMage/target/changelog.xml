@@ -1,4 +1,46 @@
 <changelog><commit>
+					<time>1493982079</time>
+					<sha1>4e383a6fe5e0c3ec151a8cf930cfdf0325417dfd</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Tweaked code of testRotateBufferedImage() and corrected a grammar mistake of its description.
+
+Removed result and put the returned value of rotateImage(...) directly as the actual value in assertEqual.
+Furthermore in the description the word &quot;whether&quot; was replaced with &quot;if&quot;.</msg>
+				</commit><commit>
+					<time>1493981895</time>
+					<sha1>72fe531f154e7aa2ac30332d597d6bb879fc55e1</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Added test to GeneratorTest.
+
+Added a test to check if rotateImage will return null when no picture is given.</msg>
+				</commit><commit>
+					<time>1493981703</time>
+					<sha1>15580a1c00c922e31db5edad2b13116043554874</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Added test to GeneratorTest.
+
+Added a test where it is checked if rotateImage() returns the same image when a rotation value of 0.0 is given.</msg>
+				</commit><commit>
+					<time>1493980929</time>
+					<sha1>f1ce935d423855b5672e167866cffdff9471ec26</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Added Javadoc comment to setup(), formated GeneratorTest and Added save action.
+
+Added a Javadoc comment to clarify to why it exists, formated the class to get rid of any unwanted code style errors and also changed the setting so an edited class now gets automatically formated.
+This means that any formating will no longer be documented in any further commits.</msg>
+				</commit><commit>
+					<time>1493980545</time>
+					<sha1>626169a807937d2a93a98897baeb3461d1e60dd7</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Edited setup() for GeneratorTest.
+
+Put some objects outside setup() so tests can interact with them too.</msg>
+				</commit><commit>
 					<time>1493921924</time>
 					<sha1>502ce55d79ae3e569aada634b441efbc63be78d6</sha1>
 					<author>Joshua Eilebrecht</author>

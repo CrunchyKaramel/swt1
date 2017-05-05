@@ -73,4 +73,11 @@ public class GeneratorTest {
 		assertEquals(null, testGenerator.rotateImage(null, 0.0));
 	}
 
+	/**
+	 * tests if rotateImage throws an IllegalArgumentException when an illegal argument is given.
+	 */
+	@Test(expected = IllegalArgumentException.class)
+	public void testRotateImageIllegalArgumentException() {
+		testGenerator.rotateImage(i, 0.7);
+	}
 }
