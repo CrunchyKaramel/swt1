@@ -128,4 +128,27 @@ public class GeneratorTest {
 			}
 		}
 	}
+
+	/**
+	 * tests if rotateImage correctly turns the picture by 180 degrees.
+	 */
+	@Test
+	public void testRotateBufferedImage180Degrees() {
+		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(180));
+		assertEquals(picture.getHeight(), result.getHeight());
+		assertEquals(picture.getWidth(), result.getWidth());
+		// compares the picture pixel by pixel
+		int width = picture.getWidth();
+		int height = picture.getHeight();
+
+		// Loop over every pixel.
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
+				// Compare the pixels for equality.
+				if (picture.getRGB(x, y) != result.getRGB(width - 1 - x, height - 1 - y)) {
+					fail("Pictures do not match.");
+				}
+			}
+		}
+	}
 }
