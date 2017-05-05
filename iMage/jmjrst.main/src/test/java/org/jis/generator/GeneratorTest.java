@@ -82,11 +82,21 @@ public class GeneratorTest {
 	}
 
 	/**
-	 * tests if rotateImage does not change the width and height of the picture.
+	 * tests if rotateImage does not change the width and height of the original picture.
 	 */
 	@Test
 	public void testRotateBufferedImage90Degrees() {
 		BufferedImage result = testGenerator.rotateImage(i, 1.5707963);
+		assertEquals(i.getHeight(), result.getWidth());
+		assertEquals(i.getWidth(), result.getHeight());
+	}
+
+	/**
+	 * tests if rotateImage does not change the width and height of the original picture.
+	 */
+	@Test
+	public void testRotateBufferedImage270Degrees() {
+		BufferedImage result = testGenerator.rotateImage(i, 4.712389);
 		assertEquals(i.getHeight(), result.getWidth());
 		assertEquals(i.getWidth(), result.getHeight());
 	}
