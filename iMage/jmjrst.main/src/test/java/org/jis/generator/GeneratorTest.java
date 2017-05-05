@@ -13,8 +13,8 @@ import javax.imageio.ImageReader;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageInputStream;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class GeneratorTest {
@@ -31,7 +31,7 @@ public class GeneratorTest {
 	 * @throws Exception
 	 *             any type of exception that may occur.
 	 */
-	@BeforeClass
+	@Before
 	public void setUp() throws Exception {
 		testGenerator = new Generator(null, 0);
 
@@ -92,7 +92,7 @@ public class GeneratorTest {
 		}
 	}
 
-	@AfterClass
+	@After
 	public void tearDown() throws Exception {
 	}
 
