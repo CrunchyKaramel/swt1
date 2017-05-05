@@ -86,7 +86,7 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage90Degrees() {
-		BufferedImage result = testGenerator.rotateImage(i, 1.5707963);
+		BufferedImage result = testGenerator.rotateImage(i, Math.toRadians(90));
 		assertEquals(i.getHeight(), result.getWidth());
 		assertEquals(i.getWidth(), result.getHeight());
 	}
@@ -96,7 +96,7 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage270Degrees() {
-		BufferedImage result = testGenerator.rotateImage(i, 4.712389);
+		BufferedImage result = testGenerator.rotateImage(i, Math.toRadians(270));
 		assertEquals(i.getHeight(), result.getWidth());
 		assertEquals(i.getWidth(), result.getHeight());
 	}
