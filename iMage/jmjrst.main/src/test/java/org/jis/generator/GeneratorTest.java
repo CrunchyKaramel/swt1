@@ -1,7 +1,6 @@
 package org.jis.generator;
 
-//todo reduce import 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -58,9 +57,13 @@ public class GeneratorTest {
 	public void tearDown() throws Exception {
 	}
 
+	/**
+	 * tests whether rotateImage() will return the same image when a rotation value of 0 is given.
+	 */
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testRotateBufferedImage() {
+		BufferedImage result = testGenerator.rotateImage(i, 0.0);
+		assertEquals(i, result);
 	}
 
 }
