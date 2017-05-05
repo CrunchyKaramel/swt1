@@ -131,21 +131,17 @@ public class GeneratorTest {
 		assertEquals(picture.getWidth(), result.getHeight());
 
 		// compares the picture pixel by pixel
-		if (picture.getWidth() == result.getWidth() && picture.getHeight() == result.getHeight()) {
-			int width = picture.getWidth();
-			int height = picture.getHeight();
+		int width = picture.getWidth();
+		int height = picture.getHeight();
 
-			// Loop over every pixel.
-			for (int y = 0; y < width; y++) {
-				for (int x = 0; x < height; x++) {
-					// Compare the pixels for equality.
-					if (picture.getRGB(x, y) != result.getRGB(y, result.getHeight() - x)) {
-						fail("Pictures do not match.");
-					}
+		// Loop over every pixel.
+		for (int y = 0; y < width; y++) {
+			for (int x = 0; x < height; x++) {
+				// Compare the pixels for equality.
+				if (picture.getRGB(x, y) != result.getRGB(y, result.getHeight() - x)) {
+					fail("Pictures do not match.");
 				}
 			}
-		} else {
-			fail("Pictures do not match.");
 		}
 	}
 
@@ -158,21 +154,17 @@ public class GeneratorTest {
 		assertEquals(picture.getHeight(), result.getWidth());
 		assertEquals(picture.getWidth(), result.getHeight());
 		// compares the picture pixel by pixel
-		if (picture.getWidth() == result.getWidth() && picture.getHeight() == result.getHeight()) {
-			int width = picture.getWidth();
-			int height = picture.getHeight();
+		int width = picture.getWidth();
+		int height = picture.getHeight();
 
-			// Loop over every pixel.
-			for (int y = 0; y < width; y++) {
-				for (int x = 0; x < height; x++) {
-					// Compare the pixels for equality.
-					if (picture.getRGB(x, y) != result.getRGB(result.getWidth() - y, x)) {
-						fail("Pictures do not match.");
-					}
+		// Loop over every pixel.
+		for (int y = 0; y < width; y++) {
+			for (int x = 0; x < height; x++) {
+				// Compare the pixels for equality.
+				if (picture.getRGB(x, y) != result.getRGB(result.getWidth() - y, x)) {
+					fail("Pictures do not match.");
 				}
 			}
-		} else {
-			fail("Pictures do not match.");
 		}
 	}
 }

@@ -1,4 +1,12 @@
 <changelog><commit>
+					<time>1494000592</time>
+					<sha1>f208e2a3fb55c626bfbb476948cec97b1c6bd854</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Changed methods testRotateBufferedImage90Degrees and testRotateImage270Degrees.
+
+Changed the way the results are compared to the picture. Now the result gets checked pixel by pixel.</msg>
+				</commit><commit>
 					<time>1493997935</time>
 					<sha1>2bff4a7830e821f65e56b97d9522c8093580bd10</sha1>
 					<author>Joshua Eilebrecht</author>
