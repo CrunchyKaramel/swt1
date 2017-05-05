@@ -1,4 +1,12 @@
 <changelog><commit>
+					<time>1493982529</time>
+					<sha1>3eedbdfd3fef704fb306d845051f53151100e19d</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Added test to GeneratorTest.
+
+Added a test to check if rotateImage() throws an IllegalArgumentException when an illegal argument is given.</msg>
+				</commit><commit>
 					<time>1493982079</time>
 					<sha1>4e383a6fe5e0c3ec151a8cf930cfdf0325417dfd</sha1>
 					<author>Joshua Eilebrecht</author>

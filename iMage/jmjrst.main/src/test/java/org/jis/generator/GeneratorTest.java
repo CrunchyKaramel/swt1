@@ -80,4 +80,14 @@ public class GeneratorTest {
 	public void testRotateImageIllegalArgumentException() {
 		testGenerator.rotateImage(i, 0.7);
 	}
+
+	/**
+	 * tests if rotateImage does not change the width and height of the picture.
+	 */
+	@Test
+	public void testRotateBufferedImage90Degrees() {
+		BufferedImage result = testGenerator.rotateImage(i, 1.5707963);
+		assertEquals(i.getHeight(), result.getWidth());
+		assertEquals(i.getWidth(), result.getHeight());
+	}
 }
