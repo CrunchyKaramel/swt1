@@ -66,4 +66,12 @@ public class GeneratorTest {
 		assertEquals(i, result);
 	}
 
+	/**
+	 * tests if rotateImage will return null when no picture is given.
+	 */
+	@Test
+	public void testRotateNullImage() {
+		assertEquals(null, testGenerator.rotateImage(null, 0.0));
+	}
+
 }
