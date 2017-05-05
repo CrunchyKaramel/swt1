@@ -19,15 +19,19 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class GeneratorTest {
+	
+	//all necessary objects for the test
+	Generator testGenerator;
+	BufferedImage i;
 
 	@Before
 	public void setUp() throws Exception {
-		Generator testGenerator = new Generator(null, 0);
+		testGenerator = new Generator(null, 0);
 		
 		//puts a picture in a BufferedImage object
 		URL url = getClass().getResource("picture.jpg");
 		File file = new File(url.getPath());
-		BufferedImage i = null;
+		i = null;
 	    IIOMetadata imeta = null;
 
 	    try
