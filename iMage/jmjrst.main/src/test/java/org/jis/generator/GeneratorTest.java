@@ -58,12 +58,11 @@ public class GeneratorTest {
 	}
 
 	/**
-	 * tests whether rotateImage() will return the same image when a rotation value of 0 is given.
+	 * tests if rotateImage() will return the same image when a rotation value of 0 is given.
 	 */
 	@Test
 	public void testRotateBufferedImage() {
-		BufferedImage result = testGenerator.rotateImage(i, 0.0);
-		assertEquals(i, result);
+		assertEquals(i, testGenerator.rotateImage(i, 0.0));
 	}
 
 	/**
