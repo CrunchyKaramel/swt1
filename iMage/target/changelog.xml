@@ -1,4 +1,20 @@
 <changelog><commit>
+					<time>1493997935</time>
+					<sha1>2bff4a7830e821f65e56b97d9522c8093580bd10</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Edited @BeforeClass, @AfterClass and all variables outside tests to be static.
+
+@BeforeClass and @AfterClass have to be static, which also requires all variables loaded during setup() to be static also.</msg>
+				</commit><commit>
+					<time>1493997338</time>
+					<sha1>35f206ea3319c2dbc79b8c2d57087f27688378cc</sha1>
+					<author>Joshua Eilebrecht</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Edited testRotateBufferedImage90degrees() and testRotateBufferedImage270degrees().
+
+Added a line where the actual 90/270 degree rotated version of picture.jpg is compared to the result of rotateImage.</msg>
+				</commit><commit>
 					<time>1493997121</time>
 					<sha1>7306e32db88dbdc7c307eb6ba8cf3a4ccf8d7d98</sha1>
 					<author>Joshua Eilebrecht</author>

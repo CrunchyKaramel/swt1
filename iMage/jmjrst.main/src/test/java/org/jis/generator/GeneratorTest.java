@@ -1,6 +1,7 @@
 package org.jis.generator;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -13,17 +14,17 @@ import javax.imageio.ImageReader;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageInputStream;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class GeneratorTest {
 
 	// all necessary objects for the test
-	Generator testGenerator;
-	BufferedImage picture;
-	BufferedImage picture90deg;
-	BufferedImage picture270deg;
+	static Generator testGenerator;
+	static BufferedImage picture;
+	static BufferedImage picture90deg;
+	static BufferedImage picture270deg;
 
 	/**
 	 * Creates all necessary objects for the tests.
@@ -31,12 +32,12 @@ public class GeneratorTest {
 	 * @throws Exception
 	 *             any type of exception that may occur.
 	 */
-	@Before
-	public void setUp() throws Exception {
+	@BeforeClass
+	public static void setUp() throws Exception {
 		testGenerator = new Generator(null, 0);
 
 		// reads in the original picture
-		URL url = getClass().getResource("picture.jpg");
+		URL url = GeneratorTest.class.getResource("picture.jpg");
 		File file = new File(url.getPath());
 		picture = null;
 		IIOMetadata imeta = null;
@@ -54,7 +55,7 @@ public class GeneratorTest {
 			return;
 		}
 		// reads in the 90 degree rotated picture
-		url = getClass().getResource("picture90deg.jpg");
+		url = GeneratorTest.class.getResource("picture90deg.jpg");
 		file = new File(url.getPath());
 		picture90deg = null;
 		imeta = null;
@@ -73,7 +74,7 @@ public class GeneratorTest {
 		}
 
 		// reads in the 270 degree rotated picture
-		url = getClass().getResource("picture270deg.jpg");
+		url = GeneratorTest.class.getResource("picture270deg.jpg");
 		file = new File(url.getPath());
 		picture270deg = null;
 		imeta = null;
@@ -92,8 +93,8 @@ public class GeneratorTest {
 		}
 	}
 
-	@After
-	public void tearDown() throws Exception {
+	@AfterClass
+	public static void tearDown() throws Exception {
 	}
 
 	/**
@@ -128,7 +129,24 @@ public class GeneratorTest {
 		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(90));
 		assertEquals(picture.getHeight(), result.getWidth());
 		assertEquals(picture.getWidth(), result.getHeight());
-		assertEquals(picture90deg, result);
+
+		// compares the picture pixel by pixel
+		if (picture.getWidth() == result.getWidth() && picture.getHeight() == result.getHeight()) {
+			int width = picture.getWidth();
+			int height = picture.getHeight();
+
+			// Loop over every pixel.
+			for (int y = 0; y < width; y++) {
+				for (int x = 0; x < height; x++) {
+					// Compare the pixels for equality.
+					if (picture.getRGB(x, y) != result.getRGB(y, result.getHeight() - x)) {
+						fail("Pictures do not match.");
+					}
+				}
+			}
+		} else {
+			fail("Pictures do not match.");
+		}
 	}
 
 	/**
@@ -139,6 +157,22 @@ public class GeneratorTest {
 		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(270));
 		assertEquals(picture.getHeight(), result.getWidth());
 		assertEquals(picture.getWidth(), result.getHeight());
-		assertEquals(picture270deg, result);
+		// compares the picture pixel by pixel
+		if (picture.getWidth() == result.getWidth() && picture.getHeight() == result.getHeight()) {
+			int width = picture.getWidth();
+			int height = picture.getHeight();
+
+			// Loop over every pixel.
+			for (int y = 0; y < width; y++) {
+				for (int x = 0; x < height; x++) {
+					// Compare the pixels for equality.
+					if (picture.getRGB(x, y) != result.getRGB(result.getWidth() - y, x)) {
+						fail("Pictures do not match.");
+					}
+				}
+			}
+		} else {
+			fail("Pictures do not match.");
+		}
 	}
 }
