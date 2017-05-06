@@ -135,6 +135,10 @@ public class GeneratorTest {
 	@Test
 	public void testRotateBufferedImage180Degrees() {
 		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(180));
+		int aa = picture.getHeight();
+		int bb = picture.getWidth();
+		int a = result.getHeight();
+		int b = result.getWidth();
 		assertEquals(picture.getHeight(), result.getHeight());
 		assertEquals(picture.getWidth(), result.getWidth());
 		// compares the picture pixel by pixel
