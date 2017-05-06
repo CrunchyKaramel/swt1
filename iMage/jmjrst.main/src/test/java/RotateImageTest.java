@@ -1,4 +1,4 @@
-package org.jis.generator;
+
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -15,13 +15,20 @@ import javax.imageio.ImageReadParam;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 
+import org.jis.generator.Generator;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class GeneratorTest {
+/**
+ * checks the method rotateImage.
+ * 
+ * @author joshua
+ *
+ */
+public class RotateImageTest {
 
 	// all necessary objects for the test
 	static Generator testGenerator;
@@ -41,7 +48,7 @@ public class GeneratorTest {
 		testGenerator = new Generator(null, 0);
 
 		// reads in the original picture
-		URL url = GeneratorTest.class.getResource("picture.jpg");
+		URL url = RotateImageTest.class.getResource("picture.jpg");
 		File file = new File(url.getPath());
 		picture = null;
 
