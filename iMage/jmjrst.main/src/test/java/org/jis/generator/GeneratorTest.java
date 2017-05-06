@@ -7,14 +7,17 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReadParam;
 import javax.imageio.ImageReader;
-import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageInputStream;
 
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -23,6 +26,7 @@ public class GeneratorTest {
 	// all necessary objects for the test
 	static Generator testGenerator;
 	static BufferedImage picture;
+	BufferedImage result;
 
 	/**
 	 * Creates all necessary objects for the tests.
@@ -31,14 +35,15 @@ public class GeneratorTest {
 	 *             any type of exception that may occur.
 	 */
 	@BeforeClass
-	public static void setUp() throws Exception {
+	public static void setUpClass() throws Exception {
+		File folder = new File("./target/data_test");
+		folder.mkdirs();
 		testGenerator = new Generator(null, 0);
 
 		// reads in the original picture
 		URL url = GeneratorTest.class.getResource("picture.jpg");
 		File file = new File(url.getPath());
 		picture = null;
-		IIOMetadata imeta = null;
 
 		try {
 			ImageInputStream iis = ImageIO.createImageInputStream(file);
@@ -46,7 +51,6 @@ public class GeneratorTest {
 			reader.setInput(iis, true);
 			ImageReadParam params = reader.getDefaultReadParam();
 			picture = reader.read(0, params);
-			imeta = reader.getImageMetadata(0);
 		} catch (IOException e) {
 			System.err.println("Error while reading File: " + file.getAbsolutePath());
 			e.printStackTrace();
@@ -54,8 +58,41 @@ public class GeneratorTest {
 		}
 	}
 
+	/**
+	 * deletes everything after tests are done.
+	 * 
+	 * @throws Exception
+	 *             any type of exception.
+	 */
 	@AfterClass
-	public static void tearDown() throws Exception {
+	public static void tearDownClass() throws Exception {
+	}
+
+	/**
+	 * (re)sets result to null.
+	 * 
+	 * @throws Exception
+	 *             any type of exception.
+	 */
+	@Before
+	public void setUp() throws Exception {
+		result = null;
+	}
+
+	/**
+	 * saves the created result picture in ./target/data_test.
+	 * 
+	 * @throws Exception
+	 *             any type of exception.
+	 */
+	@After
+	public void tearDown() throws Exception {
+		// write image to folder
+		if (result != null) {
+			File outputfile = new File("./target/data_test" + "/" + "rotatedPicture_"
+					+ new SimpleDateFormat("HHmmss_SSS").format(new Date()) + ".jpg");
+			ImageIO.write(result, "jpg", outputfile);
+		}
 	}
 
 	/**
@@ -63,7 +100,8 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage() {
-		assertEquals(picture, testGenerator.rotateImage(picture, 0.0));
+		result = testGenerator.rotateImage(picture, 0.0);
+		assertEquals(picture, result);
 	}
 
 	/**
@@ -87,7 +125,7 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage90Degrees() {
-		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(90));
+		result = testGenerator.rotateImage(picture, Math.toRadians(90));
 		assertEquals(picture.getHeight(), result.getWidth());
 		assertEquals(picture.getWidth(), result.getHeight());
 
@@ -111,7 +149,7 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage270Degrees() {
-		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(270));
+		result = testGenerator.rotateImage(picture, Math.toRadians(270));
 		assertEquals(picture.getHeight(), result.getWidth());
 		assertEquals(picture.getWidth(), result.getHeight());
 		// compares the picture pixel by pixel
@@ -134,11 +172,7 @@ public class GeneratorTest {
 	 */
 	@Test
 	public void testRotateBufferedImage180Degrees() {
-		BufferedImage result = testGenerator.rotateImage(picture, Math.toRadians(180));
-		int aa = picture.getHeight();
-		int bb = picture.getWidth();
-		int a = result.getHeight();
-		int b = result.getWidth();
+		result = testGenerator.rotateImage(picture, Math.toRadians(180));
 		assertEquals(picture.getHeight(), result.getHeight());
 		assertEquals(picture.getWidth(), result.getWidth());
 		// compares the picture pixel by pixel
