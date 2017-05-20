@@ -18,6 +18,8 @@
   </repositories>
   <modules>
   	<module>jmjrst.main</module>
+  	
+  	
   </modules>
   <dependencies>
   	<dependency>
