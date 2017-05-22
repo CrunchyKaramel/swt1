@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 
 public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
+
 	public TrianglePictureFilter(IPointGenerator pointGenerator) {
 		super(pointGenerator);
 	}
@@ -18,18 +19,18 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 
 	@Override
 	public BufferedImage apply(BufferedImage image, int numberOfIterations, int numberOfSamples) {
+		this.pointGenerator = new RandomPointGenerator(image.getWidth(), image.getHeight());
 		/*
-		 * YOUR SOLUTION HERE
+		 * extend solution, if possible
 		 */
 		return null;
 	}
 
 	@Override
 	protected IPrimitive generatePrimitive() {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
-		return null;
+		Triangle primitive = new Triangle(this.pointGenerator.nextPoint(), this.pointGenerator.nextPoint(),
+				this.pointGenerator.nextPoint());
+		return primitive;
 	}
 
 	@Override
