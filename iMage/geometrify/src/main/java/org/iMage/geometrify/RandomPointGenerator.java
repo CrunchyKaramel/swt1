@@ -6,10 +6,16 @@ import java.awt.Point;
  * Provides an infinite source of points at random coordinates within a given
  * range.
  *
- * @author Dominic Ziegler
- * @version 1.0
+ * @author Dominic Ziegler, Joshua Eilebrecht
+ * @version 1.1
  */
 public class RandomPointGenerator implements IPointGenerator {
+
+	/*
+	 * maximum values of the coordinate space the instance is working in.
+	 */
+	int maxX;
+	int maxY;
 
 	/**
 	 * Constructs the generator for points within the specified coordinate
@@ -21,16 +27,18 @@ public class RandomPointGenerator implements IPointGenerator {
 	 *            the maximum y coordinate
 	 */
 	public RandomPointGenerator(int width, int height) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
+		maxX = width;
+		maxY = height;
 	}
 
 	@Override
 	public Point nextPoint() {
 		/*
-		 * YOUR SOLUTION HERE
+		 * this method will force a long into int, however, there will be no
+		 * overflow, as the numbers can only have a value between 0 and an int
+		 * value anyways.
 		 */
-		return null;
+		return new Point(new Long(Math.round(Math.random() * maxX)).intValue(),
+				new Long(Math.round(Math.random() * maxY)).intValue());
 	}
 }
