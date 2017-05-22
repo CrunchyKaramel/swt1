@@ -329,3 +329,156 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
 !SUBENTRY 1 org.eclipse.ui 2 0 2017-05-20 13:13:58.241
 !MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY net.sf.eclipsecs.core 4 0 2017-05-20 13:58:08.788
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:293)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:211)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:157)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:300)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java.
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:192)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:314)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:284)
+	... 16 more
+Caused by: /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java:43:2: expecting EOF, found '}'
+	at antlr.Parser.match(Parser.java:211)
+	at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:439)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:174)
+	... 19 more
+
+!ENTRY net.sf.eclipsecs.core 4 0 2017-05-20 13:58:59.804
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:293)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:211)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:157)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:300)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java.
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:192)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:314)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:284)
+	... 16 more
+Caused by: /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/RandomPointGenerator.java:43:2: expecting EOF, found '}'
+	at antlr.Parser.match(Parser.java:211)
+	at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:439)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:174)
+	... 19 more
+
+!ENTRY net.sf.eclipsecs.core 4 0 2017-05-20 14:15:38.360
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:293)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:211)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:157)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:300)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java.
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:192)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:314)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:284)
+	... 16 more
+Caused by: /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java:49:2: expecting EOF, found '}'
+	at antlr.Parser.match(Parser.java:211)
+	at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:439)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:174)
+	... 19 more
+
+!ENTRY net.sf.eclipsecs.core 4 0 2017-05-20 14:16:21.518
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:293)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:211)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:157)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:300)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java.
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:192)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:314)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:284)
+	... 16 more
+Caused by: /home/joshua/swt1/iMage/geometrify/src/main/java/org/iMage/geometrify/Triangle.java:49:2: expecting EOF, found '}'
+	at antlr.Parser.match(Parser.java:211)
+	at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:439)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:174)
+	... 19 more
+!SESSION 2017-05-22 11:48:39.661 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2017-05-22 11:49:16.626
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-05-22 11:49:16.627
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2017-05-22 11:49:18.111
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-05-22 11:49:18.111
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'

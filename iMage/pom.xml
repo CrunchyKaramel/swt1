@@ -20,6 +20,7 @@
   	<module>jmjrst.main</module>
   	
   	
+  	<module>geometrify</module>
   </modules>
   <dependencies>
   	<dependency>

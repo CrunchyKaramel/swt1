@@ -11,6 +11,21 @@ import java.awt.Point;
  */
 public class Triangle implements IPrimitive {
 
+	/*
+	 * All 3 points to define the outline of the triangle.
+	 */
+	Point pointA;
+	Point pointB;
+	Point pointC;
+
+	/*
+	 * Boolean values on whether an x coordinate of one point is bigger than of
+	 * another one or not.
+	 */
+	boolean isAXBiggerThanBX;
+	boolean isAXBiggerThanCX;
+	boolean isBXBiggerThanCX;
+
 	/**
 	 * Creates a new triangle from the given vertices.
 	 *
@@ -22,9 +37,9 @@ public class Triangle implements IPrimitive {
 	 *            the third vertex
 	 */
 	public Triangle(Point a, Point b, Point c) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
+		pointA = a;
+		pointB = b;
+		pointC = c;
 	}
 
 	@Override
@@ -57,4 +72,5 @@ public class Triangle implements IPrimitive {
 		 * YOUR SOLUTION HERE
 		 */
 	}
+
 }
