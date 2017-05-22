@@ -6,8 +6,8 @@ import java.awt.Point;
 /**
  * A triangle.
  *
- * @author Dominic Ziegler, Martin Blersch
- * @version 1.0
+ * @author Dominic Ziegler, Martin Blersch, Joshua Eilebrecht
+ * @version 1.1
  */
 public class Triangle implements IPrimitive {
 
