@@ -19,12 +19,14 @@ public class Triangle implements IPrimitive {
 	Point pointC;
 
 	/*
-	 * Boolean values on whether an x coordinate of one point is bigger than of
-	 * another one or not.
+	 * color of the triangle.
 	 */
-	boolean isAXBiggerThanBX;
-	boolean isAXBiggerThanCX;
-	boolean isBXBiggerThanCX;
+	Color color;
+
+	/*
+	 * the bounding box of the triangle
+	 */
+	BoundingBox box;
 
 	/**
 	 * Creates a new triangle from the given vertices.
@@ -40,37 +42,74 @@ public class Triangle implements IPrimitive {
 		pointA = a;
 		pointB = b;
 		pointC = c;
+		int minX = pointA.x;
+		int maxX = pointA.x;
+		int minY = pointA.y;
+		int maxY = pointA.y;
+		if (minX < Math.min(pointB.x, pointC.x)) {
+			minX = Math.min(pointB.x, pointC.x);
+		}
+		if (maxX < Math.max(pointB.x, pointC.x)) {
+			maxX = Math.max(pointB.x, pointC.x);
+		}
+		if (minY < Math.min(pointB.y, pointC.y)) {
+			minY = Math.min(pointB.y, pointC.y);
+		}
+		if (maxY < Math.max(pointB.y, pointC.y)) {
+			maxY = Math.max(pointB.y, pointC.y);
+		}
+		box = new BoundingBox(new Point(minX, maxY), new Point(maxX, minY));
 	}
 
 	@Override
 	public boolean isInsidePrimitive(Point p) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
+
+		// functions for the outline of the triangle
+		double[] aB = new double[2];
+		double[] aC = new double[2];
+		double[] bC = new double[2];
+		aB[0] = (pointB.getY() - pointA.getY()) / (pointB.getX() - pointA.getX());
+		aB[1] = pointA.getY() - aB[0] * pointA.getX();
+		aC[0] = (pointC.getY() - pointA.getY()) / (pointC.getX() - pointA.getX());
+		aC[1] = pointA.getY() - aB[0] * pointA.getX();
+		bC[0] = (pointC.getY() - pointB.getY()) / (pointC.getX() - pointB.getX());
+		bC[1] = pointB.getY() - aB[0] * pointB.getX();
+
+		// determining whether the point is inside the triangle.
+		if (pointA.getY() >= pointB.getY() && pointA.getY() >= pointC.getY()) {
+			if (p.getX() <= (aB[0] * p.getX() + aB[1]) && p.getX() <= (aC[0] * p.getX() + aC[1])
+					&& p.getX() >= (bC[0] * p.getX() + bC[1])) {
+				return true;
+			}
+		}
+		if (pointB.getY() >= pointA.getY() && pointB.getY() >= pointC.getY()) {
+			if (p.getX() <= (aB[0] * p.getX() + aB[1]) && p.getX() <= (bC[0] * p.getX() + bC[1])
+					&& p.getX() >= (aC[0] * p.getX() + aC[1])) {
+				return true;
+			}
+		}
+		if (pointC.getY() >= pointA.getY() && pointA.getY() >= pointB.getY()) {
+			if (p.getX() <= (bC[0] * p.getX() + bC[1]) && p.getX() <= (aC[0] * p.getX() + aC[1])
+					&& p.getX() >= (aB[0] * p.getX() + aB[1])) {
+				return true;
+			}
+		}
 		return false;
 	}
 
 	@Override
 	public BoundingBox getBoundingBox() {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
-		return null;
+		return box;
 	}
 
 	@Override
 	public Color getColor() {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
-		return null;
+		return color;
 	}
 
 	@Override
 	public void setColor(Color c) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
+		color = c;
 	}
 
 }
