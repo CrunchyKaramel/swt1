@@ -4,8 +4,21 @@ import java.awt.Color;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
 
+/**
+ * A filter to recreate pictures using triangle shapes.
+ * 
+ * @author Joshua Eilebrecht
+ * @version 1.0
+ *
+ */
 public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 
+	/**
+	 * Initializes the filter.
+	 * 
+	 * @param pointGenerator
+	 *            a simple IPointGenerator.
+	 */
 	public TrianglePictureFilter(IPointGenerator pointGenerator) {
 		super(pointGenerator);
 	}
