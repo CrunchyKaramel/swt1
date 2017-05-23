@@ -38,7 +38,7 @@ public class RandomPointGenerator implements IPointGenerator {
 		 * overflow, as the numbers can only have a value between 0 and an int
 		 * value anyways.
 		 */
-		return new Point(new Long(Math.round(Math.random() * maxX)).intValue(),
-				new Long(Math.round(Math.random() * maxY)).intValue());
+		return new Point(new Long(Math.round(Math.random() * maxX - 1)).intValue(),
+				new Long(Math.round(Math.random() * maxY - 1)).intValue());
 	}
 }
