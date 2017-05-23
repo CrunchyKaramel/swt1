@@ -19,9 +19,9 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 					.getLowerRightCorner().y; b++) {
 				if (primitive.isInsidePrimitive(new Point(a, b))) {
 					if (color == null) {
-						color = new Color(image.getRGB(a, b));
+						color = new Color(image.getRGB(a, b), true);
 					} else {
-						Color newColor = new Color(image.getRGB(a, b));
+						Color newColor = new Color(image.getRGB(a, b), true);
 						double totalAlpha = color.getAlpha() + newColor.getAlpha();
 						double weight0 = color.getAlpha() / totalAlpha;
 						double weight1 = newColor.getAlpha() / totalAlpha;
