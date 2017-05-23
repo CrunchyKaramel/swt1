@@ -46,13 +46,13 @@ public class Triangle implements IPrimitive {
 		int maxX = pointA.x;
 		int minY = pointA.y;
 		int maxY = pointA.y;
-		if (minX < Math.min(pointB.x, pointC.x)) {
+		if (minX > Math.min(pointB.x, pointC.x)) {
 			minX = Math.min(pointB.x, pointC.x);
 		}
 		if (maxX < Math.max(pointB.x, pointC.x)) {
 			maxX = Math.max(pointB.x, pointC.x);
 		}
-		if (minY < Math.min(pointB.y, pointC.y)) {
+		if (minY > Math.min(pointB.y, pointC.y)) {
 			minY = Math.min(pointB.y, pointC.y);
 		}
 		if (maxY < Math.max(pointB.y, pointC.y)) {
@@ -80,7 +80,7 @@ public class Triangle implements IPrimitive {
 			double startY = pointA.getY() - incline * pointA.getX();
 			if (pointC.getY() > incline * pointC.getX() + startY && p.getY() < incline * p.getX() + startY) {
 				return false;
-			} else if (p.getY() > incline * p.getX() + startY) {
+			} else if (pointC.getY() < incline * pointC.getX() + startY && p.getY() > incline * p.getX() + startY) {
 				return false;
 			}
 		}
@@ -102,7 +102,7 @@ public class Triangle implements IPrimitive {
 			double startY = pointA.getY() - incline * pointA.getX();
 			if (pointB.getY() > incline * pointB.getX() + startY && p.getY() < incline * p.getX() + startY) {
 				return false;
-			} else if (p.getY() > incline * p.getX() + startY) {
+			} else if (pointB.getY() < incline * pointB.getX() + startY && p.getY() > incline * p.getX() + startY) {
 				return false;
 			}
 		}
@@ -124,7 +124,7 @@ public class Triangle implements IPrimitive {
 			double startY = pointC.getY() - incline * pointC.getX();
 			if (pointA.getY() > incline * pointA.getX() + startY && p.getY() < incline * p.getX() + startY) {
 				return false;
-			} else if (p.getY() > incline * p.getX() + startY) {
+			} else if (pointA.getY() < incline * pointA.getX() + startY && p.getY() > incline * p.getX() + startY) {
 				return false;
 			}
 		}
