@@ -51,6 +51,13 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 	protected IPrimitive generatePrimitive() {
 		Triangle primitive = new Triangle(this.pointGenerator.nextPoint(), this.pointGenerator.nextPoint(),
 				this.pointGenerator.nextPoint());
+		if (primitive.pointA.y == primitive.pointB.y && primitive.pointA.y == primitive.pointC.y
+				|| primitive.pointA.x == primitive.pointB.x && primitive.pointA.x == primitive.pointC.x
+				|| primitive.pointA.x == primitive.pointB.x && primitive.pointA.y == primitive.pointB.y
+				|| primitive.pointA.x == primitive.pointC.x && primitive.pointA.y == primitive.pointC.y
+				|| primitive.pointB.x == primitive.pointC.x && primitive.pointB.y == primitive.pointC.y) {
+			return generatePrimitive();
+		}
 		return primitive;
 	}
 
