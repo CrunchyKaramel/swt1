@@ -64,37 +64,74 @@ public class Triangle implements IPrimitive {
 	@Override
 	public boolean isInsidePrimitive(Point p) {
 
-		// functions for the outline of the triangle
-		double[] aB = new double[2];
-		double[] aC = new double[2];
-		double[] bC = new double[2];
-		aB[0] = (pointB.getY() - pointA.getY()) / (pointB.getX() - pointA.getX());
-		aB[1] = pointA.getY() - aB[0] * pointA.getX();
-		aC[0] = (pointC.getY() - pointA.getY()) / (pointC.getX() - pointA.getX());
-		aC[1] = pointA.getY() - aB[0] * pointA.getX();
-		bC[0] = (pointC.getY() - pointB.getY()) / (pointC.getX() - pointB.getX());
-		bC[1] = pointB.getY() - aB[0] * pointB.getX();
+		Point[] points = new Point[3];
+		Point[] trianglePoints = { pointA, pointB, pointC };
+		for (int a = 0; a < 3; a++) {
+			for (int b = 0; b < 3; b++) {
+				if (points[b] == null) {
+					points[b] = trianglePoints[a];
+				} else if (points[b].y < trianglePoints[a].y
+						|| (points[b].y == trianglePoints[a].y && points[b].x > trianglePoints[a].x)) {
+					Point mem1 = trianglePoints[a];
+					Point mem2;
+					for (int c = b; c < 3; c++) {
+						mem2 = points[c];
+						points[c] = mem1;
+						mem1 = mem2;
+					}
+				}
+			}
+		}
+		if (points[0].y == points[1].y) {
+			if (!(points[0].y >= p.y)) {
+				return false;
+			}
+		} else if (points[0].x == points[1].x) {
+			if (points[2].x > points[0].x) {
+				if (!(points[0].x <= p.x)) {
+					return false;
+				}
+			} else {
+				if (!(points[0].x >= p.x)) {
+					return false;
+				}
+			}
+		} else {
+			double incline = (points[0].getY() - points[1].getY()) / (points[0].getX() - points[1].getX());
+			if (!(p.getY() <= incline * p.getX() + (points[0].getY() - incline * points[0].getX()))) {
+				return false;
+			}
+		}
 
-		// determining whether the point is inside the triangle.
-		if (pointA.getY() >= pointB.getY() && pointA.getY() >= pointC.getY()) {
-			if (p.getX() <= (aB[0] * p.getX() + aB[1]) && p.getX() <= (aC[0] * p.getX() + aC[1])
-					&& p.getX() >= (bC[0] * p.getX() + bC[1])) {
-				return true;
+		if (points[0].x == points[2].x) {
+			if (points[1].x > points[0].x) {
+				if (!(points[0].x <= p.x)) {
+					return false;
+				}
+			} else {
+				if (!(points[0].x >= p.x)) {
+					return false;
+				}
+			}
+		} else {
+			double incline = (points[0].getY() - points[2].getY()) / (points[0].getX() - points[2].getX());
+			if (!(p.getY() <= incline * p.getX() + (points[0].getY() - incline * points[0].getX()))) {
+				return false;
 			}
 		}
-		if (pointB.getY() >= pointA.getY() && pointB.getY() >= pointC.getY()) {
-			if (p.getX() <= (aB[0] * p.getX() + aB[1]) && p.getX() <= (bC[0] * p.getX() + bC[1])
-					&& p.getX() >= (aC[0] * p.getX() + aC[1])) {
-				return true;
+
+		if (points[1].y == points[2].y) {
+			return p.y >= points[1].y;
+		} else if (points[1].x == points[2].x) {
+			if (points[0].x > points[1].x) {
+				return p.x >= points[1].x;
+			} else {
+				return p.x <= points[1].x;
 			}
+		} else {
+			double incline = (points[1].getY() - points[2].getY()) / (points[1].getX() - points[2].getX());
+			return p.y >= incline * p.getX() + (points[1].getY() - incline * points[1].getX());
 		}
-		if (pointC.getY() >= pointA.getY() && pointA.getY() >= pointB.getY()) {
-			if (p.getX() <= (bC[0] * p.getX() + bC[1]) && p.getX() <= (aC[0] * p.getX() + aC[1])
-					&& p.getX() >= (aB[0] * p.getX() + aB[1])) {
-				return true;
-			}
-		}
-		return false;
 	}
 
 	@Override
