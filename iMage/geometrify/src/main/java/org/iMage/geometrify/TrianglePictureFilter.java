@@ -83,8 +83,25 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 
 	@Override
 	protected void addToImage(BufferedImage image, IPrimitive primitive) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
+		for (int a = primitive.getBoundingBox().getUpperLeftCorner().x; a <= primitive.getBoundingBox()
+				.getLowerRightCorner().x; a++) {
+			for (int b = primitive.getBoundingBox().getLowerRightCorner().y; b <= primitive.getBoundingBox()
+					.getUpperLeftCorner().y; b++) {
+				if (primitive.isInsidePrimitive(new Point(a, b))) {
+					Color c0 = new Color(image.getRGB(a, b), true);
+					Color c1 = primitive.getColor();
+					double totalAlpha = c0.getAlpha() + c1.getAlpha();
+					double weight0 = c0.getAlpha() / totalAlpha;
+					double weight1 = c1.getAlpha() / totalAlpha;
+
+					double c = weight0 * c0.getRed() + weight1 * c1.getRed();
+					double d = weight0 * c0.getGreen() + weight1 * c1.getGreen();
+					double e = weight0 * c0.getBlue() + weight1 * c1.getBlue();
+					double f = Math.max(c0.getAlpha(), c1.getAlpha());
+					Color color = new Color((int) c, (int) d, (int) e, (int) f);
+					image.setRGB(a, b, color.getRGB());
+				}
+			}
+		}
 	}
 }
