@@ -2549,3 +2549,40 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact swt1:iMage.ge
 2017-05-23 18:45:09,870 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
 2017-05-23 18:45:09,871 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-23 18:45:09,871 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 18:48:00,265 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-05-23 18:55:38,418 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 18:55:38,418 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 18:55:38,419 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 18:55:38,420 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 18:56:47,862 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 18:56:47,862 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 18:56:47,863 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 18:56:47,863 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:01:02,472 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:01:02,472 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:01:02,473 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:01:02,474 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:01:08,784 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:01:08,785 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:01:08,785 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:01:08,786 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:02:48,543 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:02:48,543 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:02:48,544 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:02:48,544 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:03:16,722 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:03:16,723 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:03:16,724 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:03:16,724 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:03:53,971 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:03:53,971 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:03:53,972 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:03:53,972 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:04:20,765 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:04:20,765 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:04:20,767 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:04:20,767 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 19:04:24,697 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:04:24,698 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 19:04:24,699 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 19:04:24,699 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
