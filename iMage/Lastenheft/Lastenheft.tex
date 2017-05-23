@@ -144,7 +144,7 @@ Plattform:PC mit einem \gls{Java}-unterstützenden \gls{Betriebssystem}.
 %
 % % TODO weiter verbessern
 %
-Die Firma Pear Corp. möchte das Produkt iMage als Kunstfilter-App vertreiben. Hierfür soll auf eine erweiterbare \glspl{Plug-In} Architektur gesetzt werden, welche es ermöglicht, einzelne Kunstfilter als Plug-Ins zu modellieren. In der Basis-Variante soll hierbei zunächst ein Kunstfilter zur Abstraktion eines Bilds durch geometrische Primitive (Dreiecke, Vierecke, …) ausgeliefert werden. Weitere Filter sollen per \glspl{In-App-Kauf} erworben werden können. Nach dem Kauf wird der Filter in die entsprechende Position geladen und in iMage integriert. Bereits gekaufte Filter können jeder Zeit weiter heruntergeladen werden.
+Die Firma Pear Corp. möchte das Produkt iMage als Kunstfilter-App vertreiben. Hierfür soll auf eine erweiterbare \gls{Plug-In} Architektur gesetzt werden, welche es ermöglicht, einzelne Kunstfilter als Plug-Ins zu modellieren. In der Basis-Variante soll hierbei zunächst ein Kunstfilter zur Abstraktion eines Bilds durch geometrische Primitive (Dreiecke, Vierecke, …) ausgeliefert werden. Weitere Filter sollen per \glspl{In-App-Kauf} erworben werden können. Nach dem Kauf wird der Filter in die entsprechende Position geladen und in iMage integriert. Bereits gekaufte Filter können jeder Zeit weiter heruntergeladen werden.
 Der Kunstfilter der Basis-Variante mit Namen Geometrify soll in der Lage sein, ein gegebenes Bild durch Hinzufügen vieler gleichartiger Primitive nachzubilden. Hierbei soll das verwendete Primitiv gewählt werden können.
 Die Auswahl soll per Auswahlmenü in der graphischen Benutzeroberfläche von iMage ermöglicht werden. Nach der Auswahl des Primitivs soll eine Vorschau des Filtereffektes für das aktuelle Bild angezeigt werden. Die Berechnung des Vorschaubilds soll in Echtzeit möglich sein. Hierzu soll beim Laden des Bilds durch den Nutzer zusätzlich eine Variante mit niedriger Auflösung abgespeichert werden. Nach der Beendigung der App sollen diese Bilder zur Verbesserung der App an die Pear-Corp.-Firmenzentrale übermittelt werden.
 Kunstfilter können jederzeit vom Benutzer installiert oder deinstalliert werden.
@@ -172,6 +172,23 @@ Der Kunde deinstalliert nach Bedarf den Filter.
 
 \printnoidxglossaries
 
+\newpage
+\section{Durchführbarkeitsuntersuchung}
+\subsection{fachliche Durchführbarkeit}
+Die Filter sollen wie Plug-Ins strukturiert Sein. Das bedeutet, dass alle Filter gewisse Methoden voraussetzen müssen. Dies wird mit einer Schnittstelle garantiert. Somit können Filter ohne große Probleme in das Projekt iMage implementiert werden. Die Methoden in der Schnittstelle sind die einzigen Methoden für die Filter, mit anderen Filtern und dem Projekt iMage zu kommunizieren. Damit werden Abhängigkeiten zwischen den Filtern vermieden. Wenn mehrere Filter hintereinander ausgeführt werden müssen, ist dies in iMage selber Einzuprogrammieren oder es muss ein eigener Filter dafür erstellt werden.
+\newline
+Die Entwicklungsmaschinen sind die Firma-eigenen Rechner. Diese sind jederzeit verfügbar. Die Zielmaschinen sind die Rechner der Kunden. Diese sind immer bei einer Internetverbindung verfügbar.
+
+\subsection{alternative Lösungsvorschläge}
+Ein alternativer Lösungsvorschlag wäre, die Filter direkt in das Projekt iMage zu implementieren. Damit können Filter flexibler genutzt und auch direkt miteinander verknüpft werden. Der Nachteil ist, dass schnell Abhängigkeiten zwischen den Filtern entstehen können und dass Einfügen und Entfernen von Filtern schwieriger zu realisieren ist.
+
+\subsection{Risiken}
+Ein Risiko ist, dass durch diese Plug-In Architektur mehr Speicherplatz für das Grundsystem gebraucht wird, je mehr Plug-Ins ageboten werden. Dieser Speicherplatzwachs sollte jedoch gering sein, da größtenteils nur neue Code-Segmente eingefügt werden.
+Ein weiteres Risiko wäre die Einfachheit der Schnittstelle. Wenn ein Filter mehr als die bisherigen vorausgesetzten Methoden braucht, müsste man die Schnittstelle aktualisieren und damit auch die bisherigen Filter modifizieren oder spezielle Methode außerhalb der Schnittstelle machen. Beide Fälle würden Zeit kosten, da das Grundsystem und/oder die Filter modifiziert werden müsste(n).
+\subsection{personelle Durchführbarkeit}
+Die Implementierung der Filter ist für einen Java-Programmierer leicht zu machen. Damit können die Entwickler der Filter oder andere Java-Programmierer die Filter sehr schnell in iMage implementieren. Somit ist die Verfügbarkeit der qualifizierten Fachkräfte gleichzusetzen mit der Verfügbarkeit der Java-Entwickler. 
+\subsection{Rechtliches}
+Das Projekt erfordert die Verarbeitung von Bildern mit niedriger Auflösung. Somit ist die Einverständnis des Kunden erforderlich. Des weiteren müssen diese Bilder sicher aufbewahrt und anonym gehalten werden. 
 
 
 
