@@ -27,11 +27,11 @@ public class TriangleTest {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		testTriangle = new Triangle(new Point(12, 5), new Point(6, 77), new Point(12, 12));
-		float r = 14.66f;
-		float g = 3.111f;
-		float b = 9.7f;
-		testColor = new Color(r, g, b);
-
+		int r = 14;
+		int g = 3;
+		int b = 9;
+		testColor = Color.cyan;
+		testTriangle.setColor(testColor);
 	}
 
 	/**
@@ -76,7 +76,9 @@ public class TriangleTest {
 	 */
 	@Test
 	public void testGetColor() {
-		assert (testTriangle.getColor().equals(testColor));
+		assert (testTriangle.getColor().getRed() == testColor.getRed());
+		assert (testTriangle.getColor().getGreen() == testColor.getGreen());
+		assert (testTriangle.getColor().getBlue() == testColor.getBlue());
 	}
 
 }
