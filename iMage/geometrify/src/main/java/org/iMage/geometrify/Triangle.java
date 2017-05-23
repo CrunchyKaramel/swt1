@@ -7,7 +7,7 @@ import java.awt.Point;
  * A triangle.
  *
  * @author Dominic Ziegler, Martin Blersch, Joshua Eilebrecht
- * @version 1.1
+ * @version 1.2
  */
 public class Triangle implements IPrimitive {
 
@@ -63,75 +63,72 @@ public class Triangle implements IPrimitive {
 
 	@Override
 	public boolean isInsidePrimitive(Point p) {
-
-		Point[] points = new Point[3];
-		Point[] trianglePoints = { pointA, pointB, pointC };
-		for (int a = 0; a < 3; a++) {
-			for (int b = 0; b < 3; b++) {
-				if (points[b] == null) {
-					points[b] = trianglePoints[a];
-				} else if (points[b].y < trianglePoints[a].y
-						|| (points[b].y == trianglePoints[a].y && points[b].x > trianglePoints[a].x)) {
-					Point mem1 = trianglePoints[a];
-					Point mem2;
-					for (int c = b; c < 3; c++) {
-						mem2 = points[c];
-						points[c] = mem1;
-						mem1 = mem2;
-					}
-				}
-			}
-		}
-		if (points[0].y == points[1].y) {
-			if (!(points[0].y >= p.y)) {
+		if (pointA.y == pointB.y) {
+			if (pointC.y > pointA.y && p.y < pointA.y) {
+				return false;
+			} else if (p.y > pointA.y) {
 				return false;
 			}
-		} else if (points[0].x == points[1].x) {
-			if (points[2].x > points[0].x) {
-				if (!(points[0].x <= p.x)) {
-					return false;
-				}
-			} else {
-				if (!(points[0].x >= p.x)) {
-					return false;
-				}
+		} else if (pointA.x == pointB.x) {
+			if (pointC.x > pointA.x && p.x < pointA.x) {
+				return false;
+			} else if (p.x > pointA.x) {
+				return false;
 			}
 		} else {
-			double incline = (points[0].getY() - points[1].getY()) / (points[0].getX() - points[1].getX());
-			if (!(p.getY() <= incline * p.getX() + (points[0].getY() - incline * points[0].getX()))) {
+			double incline = (pointA.getY() - pointB.getY()) / (pointA.getX() - pointB.getX());
+			double startY = pointA.getY() - incline * pointA.getX();
+			if (pointC.getY() > incline * pointC.getX() + startY && p.getY() < incline * p.getX() + startY) {
+				return false;
+			} else if (p.getY() > incline * p.getX() + startY) {
 				return false;
 			}
 		}
 
-		if (points[0].x == points[2].x) {
-			if (points[1].x > points[0].x) {
-				if (!(points[0].x <= p.x)) {
-					return false;
-				}
-			} else {
-				if (!(points[0].x >= p.x)) {
-					return false;
-				}
+		if (pointA.y == pointC.y) {
+			if (pointB.y > pointA.y && p.y < pointA.y) {
+				return false;
+			} else if (p.y > pointA.y) {
+				return false;
+			}
+		} else if (pointA.x == pointC.x) {
+			if (pointB.x > pointA.x && p.x < pointA.x) {
+				return false;
+			} else if (p.x > pointA.x) {
+				return false;
 			}
 		} else {
-			double incline = (points[0].getY() - points[2].getY()) / (points[0].getX() - points[2].getX());
-			if (!(p.getY() <= incline * p.getX() + (points[0].getY() - incline * points[0].getX()))) {
+			double incline = (pointA.getY() - pointC.getY()) / (pointA.getX() - pointC.getX());
+			double startY = pointA.getY() - incline * pointA.getX();
+			if (pointB.getY() > incline * pointB.getX() + startY && p.getY() < incline * p.getX() + startY) {
+				return false;
+			} else if (p.getY() > incline * p.getX() + startY) {
 				return false;
 			}
 		}
 
-		if (points[1].y == points[2].y) {
-			return p.y >= points[1].y;
-		} else if (points[1].x == points[2].x) {
-			if (points[0].x > points[1].x) {
-				return p.x >= points[1].x;
-			} else {
-				return p.x <= points[1].x;
+		if (pointC.y == pointB.y) {
+			if (pointA.y > pointC.y && p.y < pointC.y) {
+				return false;
+			} else if (p.y > pointC.y) {
+				return false;
+			}
+		} else if (pointC.x == pointB.x) {
+			if (pointA.x > pointC.x && p.x < pointC.x) {
+				return false;
+			} else if (p.x > pointC.x) {
+				return false;
 			}
 		} else {
-			double incline = (points[1].getY() - points[2].getY()) / (points[1].getX() - points[2].getX());
-			return p.y >= incline * p.getX() + (points[1].getY() - incline * points[1].getX());
+			double incline = (pointC.getY() - pointB.getY()) / (pointC.getX() - pointB.getX());
+			double startY = pointC.getY() - incline * pointC.getX();
+			if (pointA.getY() > incline * pointA.getX() + startY && p.getY() < incline * p.getX() + startY) {
+				return false;
+			} else if (p.getY() > incline * p.getX() + startY) {
+				return false;
+			}
 		}
+		return true;
 	}
 
 	@Override
