@@ -63,10 +63,22 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 
 	@Override
 	protected int calculateDifference(BufferedImage original, BufferedImage current, IPrimitive primitive) {
-		/*
-		 * YOUR SOLUTION HERE
-		 */
-		return 0;
+		BufferedImage mem = current;
+		addToImage(mem, primitive);
+		long correctPixels = 0L;
+		for (int a = primitive.getBoundingBox().getUpperLeftCorner().x; a <= primitive.getBoundingBox()
+				.getLowerRightCorner().x; a++) {
+			for (int b = primitive.getBoundingBox().getLowerRightCorner().y; b <= primitive.getBoundingBox()
+					.getUpperLeftCorner().y; b++) {
+				if (original.getRGB(a, b) == original.getRGB(a, b)) {
+					correctPixels++;
+				}
+			}
+		}
+		return (int) (correctPixels / ((primitive.getBoundingBox().getLowerRightCorner().x
+				- primitive.getBoundingBox().getUpperLeftCorner().x)
+				* (primitive.getBoundingBox().getUpperLeftCorner().y
+						- primitive.getBoundingBox().getLowerRightCorner().y)));
 	}
 
 	@Override

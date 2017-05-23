@@ -2233,3 +2233,13 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact swt1:iMage.ge
 2017-05-23 14:28:01,361 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
 2017-05-23 14:28:01,362 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-23 14:28:01,362 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 14:33:14,014 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-05-23 14:56:06,310 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 14:56:06,310 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 14:56:06,312 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 14:56:06,312 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
+2017-05-23 14:59:45,294 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-05-23 15:01:03,735 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 15:01:03,735 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\main\resources
+2017-05-23 15:01:03,737 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-23 15:01:03,737 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\geometrify\src\test\resources
