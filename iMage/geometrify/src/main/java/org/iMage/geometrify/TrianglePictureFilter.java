@@ -40,11 +40,21 @@ public class TrianglePictureFilter extends AbstractPrimitivePictureFilter {
 
 	@Override
 	public BufferedImage apply(BufferedImage image, int numberOfIterations, int numberOfSamples) {
+		BufferedImage newImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
 		this.pointGenerator = new RandomPointGenerator(image.getWidth(), image.getHeight());
-		/*
-		 * extend solution, if possible
-		 */
-		return null;
+		for (int a = 0; a < numberOfIterations; a++) {
+			IPrimitive triangle = null;
+			for (int b = 0; b < numberOfSamples; b++) {
+				IPrimitive currentTriangle = generatePrimitive();
+				currentTriangle.setColor(calculateColor(image, currentTriangle));
+				if (triangle == null || calculateDifference(image, newImage,
+						currentTriangle) > calculateDifference(image, newImage, triangle)) {
+					triangle = currentTriangle;
+				}
+			}
+			addToImage(newImage, triangle);
+		}
+		return newImage;
 	}
 
 	@Override
