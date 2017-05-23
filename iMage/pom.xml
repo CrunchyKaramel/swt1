@@ -21,6 +21,7 @@
   	
   	
   	<module>geometrify</module>
+  	<module>iMage.geometrify-cli</module>
   </modules>
   <dependencies>
   	<dependency>
