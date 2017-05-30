@@ -3,7 +3,6 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495279796761_2" label="iMage.geometrify" name="iMage.geometrify"/>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495456376468_4" label="iMage" name="iMage">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.geometrify-cli" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.geometrify" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/1939691" type="4"/>
 </workingSet>
