@@ -33,10 +33,15 @@ public final class PluginManager {
 				list.add(plugin);
 			} else {
 				for (int i = 0; i < list.size(); i++) {
-					if (list.get(i).priority.compareTo(plugin.priority) < 0) {
-						list.add(i, plugin);
-						plugin = null;
-						i = list.size();
+					if (!list.get(i).getPriority().name().equalsIgnoreCase("HIGH")
+							&& !plugin.getPriority().name().equalsIgnoreCase("LOW")) {
+						if (list.get(i).getPriority().name().equalsIgnoreCase("MID")
+								&& plugin.getPriority().name().equalsIgnoreCase("HIGH")
+								|| list.get(i).getPriority().name().equalsIgnoreCase("LOW")) {
+							list.add(i, plugin);
+							plugin = null;
+							i = list.size();
+						}
 					}
 				}
 				if (plugin != null) {
