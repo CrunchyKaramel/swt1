@@ -16,6 +16,7 @@
 package org.jis.view;
 
 import java.net.URL;
+import java.util.List;
 
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
@@ -23,6 +24,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.UIManager;
 
+import org.iMage.plugins.JmjrstPlugin;
+import org.iMage.plugins.PluginManager;
 import org.jis.Main;
 import org.jis.listner.MenuListner;
 
@@ -39,7 +42,7 @@ public class Menu extends JMenuBar {
 	public JMenuItem gener;
 	public JMenuItem zippen;
 	public JMenuItem gallerie;
-	public JMenuItem loadPlugIn; // TODO add loadPlugIn
+	public JMenu loadPlugIn;
 	public JMenuItem exit;
 	public JMenuItem set_quality;
 	public JMenuItem info;
@@ -77,7 +80,7 @@ public class Menu extends JMenuBar {
 		url = ClassLoader.getSystemResource("icons/text-html.png");
 		gallerie.setIcon(new ImageIcon(url));
 
-		loadPlugIn = new JMenuItem(m.mes.getString("Menu.17"));
+		loadPlugIn = new JMenu(m.mes.getString("Menu.17"));
 
 		exit = new JMenuItem(m.mes.getString("Menu.5"));
 		url = ClassLoader.getSystemResource("icons/system-log-out.png");
@@ -157,6 +160,15 @@ public class Menu extends JMenuBar {
 					.equalsIgnoreCase("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel")) //$NON-NLS-1$
 				optionen_look.add(look_nimbus);
 		}
+		List<JmjrstPlugin> list = PluginManager.getPlugins();
+		if (list.size() == 0) {
+			JMenuItem plugin = new JMenuItem("(no plugins available!)");
+			plugin.setEnabled(false);
+			loadPlugIn.add(plugin);
+		} else {
+			for (int i = 0; i < list.size(); i++) {
+				loadPlugIn.add(new JMenuItem(list.get(i).getName()));
+			}
+		}
 	}
-
 }
