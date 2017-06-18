@@ -20,8 +20,9 @@
   	<module>jmjrst.main</module>
   	
   	
-  	<module>geometrify</module>
   	
+
+  	<module>iMage.geometrify</module>
   </modules>
   <dependencies>
   	<dependency>
