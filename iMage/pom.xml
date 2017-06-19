@@ -23,6 +23,8 @@
   	
 
   	<module>iMage.geometrify</module>
+  	
+  	<module>iMage.iLlustrate</module>
   </modules>
   <dependencies>
   	<dependency>

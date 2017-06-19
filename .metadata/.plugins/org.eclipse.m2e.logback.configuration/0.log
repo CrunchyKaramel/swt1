@@ -3349,3 +3349,182 @@ org.eclipse.core.runtime.CoreException: Launch configuration TriangleTest refere
 2017-06-18 16:31:45,149 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-06-18 16:31:45,150 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-06-18 16:31:45,151 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:37:07,900 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-18 17:37:11,321 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:11,325 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-18 17:37:11,359 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:11,360 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:37:11,538 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:37:11,936 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:37:12,003 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:37:12,471 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:12,471 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:37:12,472 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:12,473 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:37:16,351 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:16,353 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:37:16,354 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:37:16,355 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:38:08,123 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:38:08,666 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:38:09,064 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:38:09,145 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:38:09,155 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:38:09,432 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:38:09,432 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:38:09,434 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:38:09,435 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:38:10,548 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:38:10,549 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:38:10,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:38:10,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:38:17,148 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Joshua\Documents\swt1\swt1\iMage
+2017-06-18 17:38:17,149 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U clean package
+2017-06-18 17:39:12,178 [Worker-8] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Joshua\Documents\swt1\swt1\iMage
+2017-06-18 17:39:12,178 [Worker-8] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U clean package
+2017-06-18 17:40:07,693 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-18 17:40:07,895 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:40:07,951 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:40:08,005 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:40:08,079 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/lez-maven-plugin/0.1.13-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:40:08,345 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:40:08,395 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:40:08,433 [DefaultMetadataResolver-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:40:08,434 [DefaultMetadataResolver-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:40:08,449 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:40:08,722 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/main/java
+2017-06-18 17:40:08,723 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/main/resources
+2017-06-18 17:40:08,724 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/test/java
+2017-06-18 17:40:08,724 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/test/resources
+2017-06-18 17:40:08,763 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/main/java
+2017-06-18 17:40:08,764 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/test/java
+2017-06-18 17:40:08,764 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /iMage.geometrify/src/test/resources
+2017-06-18 17:40:08,966 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-06-18 17:40:09,440 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:40:09,440 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-18 17:40:09,472 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:40:09,473 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:40:09,588 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:40:09,588 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:40:09,589 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:40:09,589 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:42:12,997 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1.ub4.a3:iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iLlustrate\pom.xml.
+2017-06-18 17:42:26,000 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:42:26,290 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:42:26,356 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:42:26,657 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:42:26,658 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:42:26,659 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:42:26,660 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:42:26,862 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:42:26,862 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:42:26,863 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:42:26,863 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:43:12,473 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:44:20,983 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:44:21,245 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:44:21,288 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:44:21,297 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:44:21,549 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:44:21,550 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:44:21,551 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:44:21,552 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:44:22,674 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:44:22,675 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:44:22,676 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:44:22,676 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-18 17:47:07,259 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:47:07,329 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:07,329 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\main\resources
+2017-06-18 17:47:07,330 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:07,330 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\test\resources
+2017-06-18 17:47:30,836 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-18 17:47:30,898 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:47:30,933 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.iLlustrate/src/main/java
+2017-06-18 17:47:30,934 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.iLlustrate/src/test/java
+2017-06-18 17:47:31,044 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-06-18 17:47:31,224 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:31,224 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\main\resources
+2017-06-18 17:47:31,225 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:31,225 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\test\resources
+2017-06-18 17:47:47,726 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-18 17:47:48,097 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:47:48,155 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:47:48,219 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:47:48,291 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/lez-maven-plugin/0.1.13-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:47:48,532 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:47:48,630 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:47:48,666 [DefaultMetadataResolver-1-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:47:48,681 [DefaultMetadataResolver-1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:47:48,778 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:47:49,050 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/main/java
+2017-06-18 17:47:49,050 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/main/resources
+2017-06-18 17:47:49,050 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/test/java
+2017-06-18 17:47:49,050 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/test/resources
+2017-06-18 17:47:49,101 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/main/java
+2017-06-18 17:47:49,101 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/test/java
+2017-06-18 17:47:49,102 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /iMage.geometrify/src/test/resources
+2017-06-18 17:47:49,141 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.iLlustrate/src/main/java
+2017-06-18 17:47:49,141 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.iLlustrate/src/test/java
+2017-06-18 17:47:49,318 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-06-18 17:47:49,728 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,729 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-18 17:47:49,765 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,766 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:47:49,869 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,869 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:47:49,870 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,870 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:47:49,892 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,892 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\main\resources
+2017-06-18 17:47:49,894 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:47:49,894 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\src\test\resources
+2017-06-18 17:48:00,265 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:48:11,382 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-18 17:48:11,512 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:48:11,571 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/swt1/ss2017/uebungsparent/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:48:11,619 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-18 17:48:11,683 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/edu/kit/ipd/lez-maven-plugin/0.1.13-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:48:11,903 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-18 17:48:11,952 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-18 17:48:11,993 [DefaultMetadataResolver-2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:48:11,998 [DefaultMetadataResolver-2-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://bob.ipd.kit.edu/nexus/content/repositories/swt1/swt1/iMage.geometrify-base/0.0.1-SNAPSHOT/maven-metadata.xml
+2017-06-18 17:48:12,009 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:48:12,236 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/main/java
+2017-06-18 17:48:12,236 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/main/resources
+2017-06-18 17:48:12,236 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1939691/src/test/java
+2017-06-18 17:48:12,237 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1939691/src/test/resources
+2017-06-18 17:48:12,270 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/main/java
+2017-06-18 17:48:12,271 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iMage.geometrify/src/test/java
+2017-06-18 17:48:12,271 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /iMage.geometrify/src/test/resources
+2017-06-18 17:48:12,409 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-06-18 17:48:12,794 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:48:12,795 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-18 17:48:12,822 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:48:12,823 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:48:12,901 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:48:12,901 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-18 17:48:12,902 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-18 17:48:12,902 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-18 17:48:14,691 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Joshua\Documents\swt1\swt1\iMage
+2017-06-18 17:48:14,691 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U clean package
+2017-06-18 17:49:44,738 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-18 17:49:44,759 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-18 17:49:44,826 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-06-19 17:28:57,800 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-06-19 17:28:59,321 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:28:59,325 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-19 17:28:59,370 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:28:59,371 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-19 17:28:59,616 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\pom.xml.
+2017-06-19 17:28:59,627 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: swt1:iMage.iLlustrate:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.iLlustrate\pom.xml.
+2017-06-19 17:29:00,251 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub2.a4:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-06-19 17:29:00,314 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1:iMage.geometrify:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\pom.xml.
+2017-06-19 17:29:00,803 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:29:00,804 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-19 17:29:00,805 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:29:00,806 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-19 17:29:01,973 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:29:01,974 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-19 17:29:01,975 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-19 17:29:01,976 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
