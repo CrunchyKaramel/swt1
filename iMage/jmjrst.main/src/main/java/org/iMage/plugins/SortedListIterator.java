@@ -11,10 +11,10 @@ import java.util.ListIterator;
  *            any type of object
  */
 public class SortedListIterator<E> implements ListIterator<E> {
-	int index;
-	SortedListCell<E> previous;
-	SortedListCell<E> next;
-	E lastReturned;
+	private int index;
+	private SortedListCell<E> previous;
+	private SortedListCell<E> next;
+	private E lastReturned;
 
 	/**
 	 * constructor for the iterator
