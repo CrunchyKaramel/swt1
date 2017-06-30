@@ -1,0 +1,85 @@
+package org.iMage.plugins;
+
+/**
+ * A list cell for a doubly linked list.
+ * 
+ * @author Joshua Eilebrecht
+ *
+ * @param <E>
+ *            any type of object
+ */
+public class SortedListCell<E> {
+	private E previous;
+	private E next;
+	private E content;
+
+	/**
+	 * creates a filled cell with no neighbors.
+	 * 
+	 * @param content
+	 *            the content that this cell is filled with
+	 */
+	SortedListCell(E content) {
+		this.content = content;
+		this.previous = null;
+		this.next = null;
+	}
+
+	/**
+	 * gets the content of the cell.
+	 * 
+	 * @return the content of the cell
+	 */
+	E get() {
+		return this.content;
+	}
+
+	/**
+	 * gets the next neighbor.
+	 * 
+	 * @return the next neighbor
+	 */
+	E getNext() {
+		return this.next;
+	}
+
+	/**
+	 * gets the previous neighbor.
+	 * 
+	 * @return the previous neighbor
+	 */
+	E getPrevious() {
+		return this.previous;
+	}
+
+	/**
+	 * sets the content of the cell
+	 * 
+	 * @param content
+	 *            the new content of the cell
+	 */
+	void set(E content) {
+		this.content = content;
+	}
+
+	/**
+	 * sets the next neighbor of the cell.
+	 * 
+	 * @param next
+	 *            the new next neighbor of the cell
+	 */
+	void setNext(E next) {
+		this.next = next;
+	}
+
+	/**
+	 * sets the previous neighbor of the cell.
+	 * 
+	 * @param previous
+	 *            the new previous neighbor of the cell
+	 */
+	void setPrevious(E previous) {
+		this.previous = previous;
+	}
+
+}
