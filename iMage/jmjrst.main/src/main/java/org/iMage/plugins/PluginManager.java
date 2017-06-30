@@ -1,7 +1,7 @@
 package org.iMage.plugins;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 import java.util.List;
 import java.util.ServiceLoader;
 
@@ -11,6 +11,7 @@ import java.util.ServiceLoader;
  *
  */
 public final class PluginManager {
+
 	/**
 	 * No constructor for utility class.
 	 */
@@ -25,30 +26,15 @@ public final class PluginManager {
 	 *         ascending order.
 	 */
 	public static List<JmjrstPlugin> getPlugins() {
-		Iterator<JmjrstPlugin> plugins = ServiceLoader.load(JmjrstPlugin.class).iterator();
-		ArrayList<JmjrstPlugin> list = new ArrayList<JmjrstPlugin>();
-		while (plugins.hasNext()) {
-			JmjrstPlugin plugin = plugins.next();
-			if (list.isEmpty()) {
-				list.add(plugin);
-			} else {
-				for (int i = 0; i < list.size(); i++) {
-					if (!list.get(i).getPriority().name().equalsIgnoreCase("HIGH")
-							&& !plugin.getPriority().name().equalsIgnoreCase("LOW")) {
-						if (list.get(i).getPriority().name().equalsIgnoreCase("MID")
-								&& plugin.getPriority().name().equalsIgnoreCase("HIGH")
-								|| list.get(i).getPriority().name().equalsIgnoreCase("LOW")) {
-							list.add(i, plugin);
-							plugin = null;
-							i = list.size();
-						}
-					}
-				}
-				if (plugin != null) {
-					list.add(plugin);
-				}
-			}
+		ServiceLoader<JmjrstPlugin> serviceLoader = ServiceLoader.load(JmjrstPlugin.class);
+
+		List<JmjrstPlugin> p = new ArrayList<>();
+		for (final JmjrstPlugin plugin : serviceLoader) {
+			p.add(plugin);
 		}
-		return list;
+
+		// Sortieren mit dem Comparator aus JmjrstPlugin
+		Collections.sort(p);
+		return p;
 	}
 }
