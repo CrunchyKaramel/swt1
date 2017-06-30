@@ -3607,3 +3607,24 @@ org.eclipse.core.runtime.CoreException: Launch configuration TriangleTest refere
 2017-06-30 21:33:41,919 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-06-30 21:33:41,919 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-06-30 21:34:06,494 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-30 21:37:22,840 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-30 21:39:22,670 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:39:22,674 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-30 21:39:22,704 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:39:22,704 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-30 21:39:22,859 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:39:22,859 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-06-30 21:39:22,860 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:39:22,860 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-06-30 21:54:00,476 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:00,486 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-30 21:54:00,488 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:00,489 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-30 21:54:04,251 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:04,253 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-30 21:54:04,255 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:04,255 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-30 21:54:40,841 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:40,842 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-06-30 21:54:40,845 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-30 21:54:40,845 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

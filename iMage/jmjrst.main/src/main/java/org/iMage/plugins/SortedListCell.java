@@ -9,8 +9,8 @@ package org.iMage.plugins;
  *            any type of object
  */
 public class SortedListCell<E> {
-	private E previous;
-	private E next;
+	private SortedListCell<E> previous;
+	private SortedListCell<E> next;
 	private E content;
 
 	/**
@@ -39,7 +39,7 @@ public class SortedListCell<E> {
 	 * 
 	 * @return the next neighbor
 	 */
-	E getNext() {
+	SortedListCell<E> getNext() {
 		return this.next;
 	}
 
@@ -48,7 +48,7 @@ public class SortedListCell<E> {
 	 * 
 	 * @return the previous neighbor
 	 */
-	E getPrevious() {
+	SortedListCell<E> getPrevious() {
 		return this.previous;
 	}
 
@@ -68,7 +68,7 @@ public class SortedListCell<E> {
 	 * @param next
 	 *            the new next neighbor of the cell
 	 */
-	void setNext(E next) {
+	void setNext(SortedListCell<E> next) {
 		this.next = next;
 	}
 
@@ -78,7 +78,7 @@ public class SortedListCell<E> {
 	 * @param previous
 	 *            the new previous neighbor of the cell
 	 */
-	void setPrevious(E previous) {
+	void setPrevious(SortedListCell<E> previous) {
 		this.previous = previous;
 	}
 
