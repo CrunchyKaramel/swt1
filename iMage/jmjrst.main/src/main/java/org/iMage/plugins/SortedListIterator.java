@@ -39,6 +39,7 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 			this.previous = this.next;
 			this.next = this.next.getNext();
 			this.lastReturned = this.previous.get();
+			this.index++;
 			return this.previous.get();
 		}
 		return null;
@@ -58,6 +59,7 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 			this.next = this.previous;
 			this.previous = this.previous.getPrevious();
 			this.lastReturned = this.next.get();
+			this.index--;
 			return this.next.get();
 		}
 		return null;
@@ -128,23 +130,30 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 			}
 			boolean isAdded = false;
 			while (!isAdded) {
-				PluginPriority nextPri = this.next.get().priority;
-				PluginPriority ePri = e.priority;
-				if (nextPri.compareTo(PluginPriority.HIGH) == 0
-						|| nextPri.compareTo(PluginPriority.MID) == 0
-								&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.LOW) == 0)
-						|| nextPri.compareTo(PluginPriority.LOW) == 0 && ePri.compareTo(PluginPriority.LOW) == 0) {
-					newCell.setNext(this.next);
+				if (this.next != null) {
+					PluginPriority nextPri = this.next.get().priority;
+					PluginPriority ePri = e.priority;
+					if (nextPri.compareTo(PluginPriority.HIGH) == 0 || nextPri.compareTo(PluginPriority.MID) == 0
+							&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.LOW) == 0)
+							|| nextPri.compareTo(PluginPriority.LOW) == 0 && ePri.compareTo(PluginPriority.LOW) == 0) {
+						newCell.setNext(this.next);
+						if (this.previous != null) {
+							newCell.setPrevious(this.previous);
+							this.previous.setNext(newCell);
+						}
+						this.next.setPrevious(newCell);
+						this.next = newCell;
+						isAdded = true;
+					}
+				} else {
 					if (this.previous != null) {
 						newCell.setPrevious(this.previous);
 						this.previous.setNext(newCell);
 					}
-					if (this.next != null) {
-						this.next.setPrevious(newCell);
-						this.next = newCell;
-					}
+					this.next = newCell;
 					isAdded = true;
 				}
+				this.next();
 			}
 			while (this.index < callBack) {
 				this.next();
