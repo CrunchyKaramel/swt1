@@ -135,10 +135,14 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 								&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.LOW) == 0)
 						|| nextPri.compareTo(PluginPriority.LOW) == 0 && ePri.compareTo(PluginPriority.LOW) == 0) {
 					newCell.setNext(this.next);
-					newCell.setPrevious(this.previous);
-					this.next.setPrevious(newCell);
-					this.previous.setNext(newCell);
-					this.next = newCell;
+					if (this.previous != null) {
+						newCell.setPrevious(this.previous);
+						this.previous.setNext(newCell);
+					}
+					if (this.next != null) {
+						this.next.setPrevious(newCell);
+						this.next = newCell;
+					}
 				}
 			}
 			while (this.index < callBack) {
