@@ -26,6 +26,18 @@ public class SortedList<T extends JmjrstPlugin> implements Iterable<T> {
 	 */
 	@Override
 	public Iterator<T> iterator() {
+		while (this.iter.hasPrevious()) {
+			this.iter.previous();
+		}
+		return iter;
+	}
+
+	/**
+	 * returns the iterator in its actual class.
+	 * 
+	 * @return the iterator as a SortedListIterator
+	 */
+	SortedListIterator<T> getIterator() {
 		return iter;
 	}
 
