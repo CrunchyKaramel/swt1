@@ -8,7 +8,7 @@ package org.iMage.plugins;
  * @param <E>
  *            any type of object
  */
-public class SortedListCell<E> {
+public class SortedListCell<E extends JmjrstPlugin> {
 	private SortedListCell<E> previous;
 	private SortedListCell<E> next;
 	private E content;
