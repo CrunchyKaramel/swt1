@@ -130,10 +130,10 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 			while (!isAdded) {
 				PluginPriority nextPri = this.next.get().priority;
 				PluginPriority ePri = e.priority;
-				if (nextPri.compareTo(PluginPriority.LOW) == 0
+				if (nextPri.compareTo(PluginPriority.HIGH) == 0
 						|| nextPri.compareTo(PluginPriority.MID) == 0
-								&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.HIGH) == 0)
-						|| nextPri.compareTo(PluginPriority.HIGH) == 0 && ePri.compareTo(PluginPriority.HIGH) == 0) {
+								&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.LOW) == 0)
+						|| nextPri.compareTo(PluginPriority.LOW) == 0 && ePri.compareTo(PluginPriority.LOW) == 0) {
 					newCell.setNext(this.next);
 					newCell.setPrevious(this.previous);
 					this.next.setPrevious(newCell);
