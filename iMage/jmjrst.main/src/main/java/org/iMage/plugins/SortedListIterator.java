@@ -143,6 +143,7 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 						this.next.setPrevious(newCell);
 						this.next = newCell;
 					}
+					isAdded = true;
 				}
 			}
 			while (this.index < callBack) {
