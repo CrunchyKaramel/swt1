@@ -53,13 +53,15 @@ public class SortedListCell<E> {
 	}
 
 	/**
-	 * sets the content of the cell
+	 * sets the content of the cell. Does not do anything when content is null.
 	 * 
 	 * @param content
 	 *            the new content of the cell
 	 */
 	void set(E content) {
-		this.content = content;
+		if (content != null) {
+			this.content = content;
+		}
 	}
 
 	/**
