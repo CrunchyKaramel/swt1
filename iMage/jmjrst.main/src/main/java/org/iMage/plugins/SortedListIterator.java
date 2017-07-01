@@ -10,7 +10,7 @@ import java.util.ListIterator;
  * @param <E>
  *            any type of object
  */
-public class SortedListIterator<E> implements ListIterator<E> {
+public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<E> {
 	private int index;
 	private SortedListCell<E> previous;
 	private SortedListCell<E> next;
@@ -113,25 +113,40 @@ public class SortedListIterator<E> implements ListIterator<E> {
 
 	@Override
 	public void set(E e) {
-		if (this.next != null) {
-			this.next.set(e);
-		} else if (this.previous != null) {
-			this.previous.set(e);
-		}
+		// not allowed in this list!
 	}
 
 	@Override
 	public void add(E e) {
 		SortedListCell<E> newCell = new SortedListCell<E>(e);
-		if (this.previous != null) {
-			this.previous.setNext(newCell);
-			newCell.setPrevious(this.previous);
+		if (this.next == null && this.previous == null) {
+			this.next = newCell;
+		} else {
+			int callBack = this.index;
+			while (this.hasPrevious()) {
+				this.previous();
+			}
+			boolean isAdded = false;
+			while (!isAdded) {
+				PluginPriority nextPri = this.next.get().priority;
+				PluginPriority ePri = e.priority;
+				if (nextPri.compareTo(PluginPriority.LOW) == 0
+						|| nextPri.compareTo(PluginPriority.MID) == 0
+								&& (ePri.compareTo(PluginPriority.MID) == 0 || ePri.compareTo(PluginPriority.HIGH) == 0)
+						|| nextPri.compareTo(PluginPriority.HIGH) == 0 && ePri.compareTo(PluginPriority.HIGH) == 0) {
+					newCell.setNext(this.next);
+					newCell.setPrevious(this.previous);
+					this.next.setPrevious(newCell);
+					this.previous.setNext(newCell);
+					this.next = newCell;
+				}
+			}
+			while (this.index < callBack) {
+				this.next();
+			}
+			while (this.index > callBack) {
+				this.previous();
+			}
 		}
-		if (this.next != null) {
-			this.next.setPrevious(newCell);
-			newCell.setNext(this.next);
-		}
-		this.next = newCell;
 	}
-
 }
