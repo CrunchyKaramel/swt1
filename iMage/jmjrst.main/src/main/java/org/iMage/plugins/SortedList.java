@@ -10,7 +10,7 @@ import java.util.Iterator;
  * @param <T>
  *            any type of object
  */
-public class SortedList<T> implements Iterable<T> {
+public class SortedList<T extends JmjrstPlugin> implements Iterable<T> {
 
 	private SortedListIterator<T> iter;
 
