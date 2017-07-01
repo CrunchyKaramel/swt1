@@ -25,4 +25,8 @@ public class PluginList {
 	public Iterable<JmjrstPlugin> getPlugins() {
 		return this.list;
 	}
+
+	SortedList<JmjrstPlugin> getIterable() {
+		return this.list;
+	}
 }
