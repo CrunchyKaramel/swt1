@@ -73,7 +73,7 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 	@Override
 	public int previousIndex() {
 		if (this.index > 0) {
-			return this.index;
+			return this.index - 1;
 		}
 		return 0;
 	}
