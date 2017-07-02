@@ -83,12 +83,15 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 		SortedListCell<E> mem = this.next;
 		int memIndex = 0;
 		int callBack = this.index;
-		while (mem.getPrevious() != null) {
+		while (mem != null && mem.getPrevious() != null) {
 			mem = mem.getPrevious();
 		}
 		while (mem != null && !mem.get().equals(lastReturned)) {
 			mem = mem.getNext();
 			memIndex++;
+		}
+		if (memIndex <= callBack) {
+			callBack--;
 		}
 		if (mem != null && mem.get().equals(lastReturned)) {
 			while (this.index < memIndex) {
