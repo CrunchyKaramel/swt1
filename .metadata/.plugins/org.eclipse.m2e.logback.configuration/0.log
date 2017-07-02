@@ -4850,3 +4850,13 @@ org.eclipse.core.runtime.CoreException: Launch configuration TriangleTest refere
 2017-07-02 18:18:02,465 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-07-02 18:18:15,314 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Joshua\Documents\swt1\swt1\iMage
 2017-07-02 18:18:15,315 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U clean package
+2017-07-02 18:27:21,331 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-02 18:27:23,410 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-02 18:27:23,410 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify\src\main\resources
+2017-07-02 18:27:23,412 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-02 18:27:23,415 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-02 18:27:35,148 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub5.a2:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\jmjrst.main\pom.xml.
+2017-07-02 18:27:35,292 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-02 18:27:35,293 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2017-07-02 18:27:35,295 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-02 18:27:35,295 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
