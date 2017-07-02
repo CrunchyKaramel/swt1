@@ -95,10 +95,10 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 		}
 		if (mem != null && mem.get().equals(lastReturned)) {
 			while (this.index < memIndex) {
-				this.next();
+				this.internalNext();
 			}
 			while (this.index > memIndex) {
-				this.previous();
+				this.internalPrevious();
 			}
 			if (this.previous != null) {
 				this.previous.setNext(this.next.getNext());
@@ -109,9 +109,9 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 
 		while (this.index != callBack) {
 			if (this.index < callBack) {
-				this.next();
+				this.internalNext();
 			} else {
-				this.previous();
+				this.internalPrevious();
 			}
 		}
 	}
@@ -129,7 +129,7 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 		} else {
 			int callBack = this.index;
 			while (this.hasPrevious()) {
-				this.previous();
+				this.internalPrevious();
 			}
 			boolean isAdded = false;
 			while (!isAdded) {
@@ -156,14 +156,34 @@ public class SortedListIterator<E extends JmjrstPlugin> implements ListIterator<
 					this.next = newCell;
 					isAdded = true;
 				}
-				this.next();
+				this.internalNext();
 			}
 			while (this.index < callBack) {
-				this.next();
+				this.internalNext();
 			}
 			while (this.index > callBack) {
-				this.previous();
+				this.internalPrevious();
 			}
 		}
+	}
+
+	private E internalNext() {
+		if (this.next != null) {
+			this.previous = this.next;
+			this.next = this.next.getNext();
+			this.index++;
+			return this.previous.get();
+		}
+		return null;
+	}
+
+	private E internalPrevious() {
+		if (this.previous != null) {
+			this.next = this.previous;
+			this.previous = this.previous.getPrevious();
+			this.index--;
+			return this.next.get();
+		}
+		return null;
 	}
 }
