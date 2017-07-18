@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>iMage.geometrify-parallel</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>swt1</groupId>
+  		<artifactId>iMage.geometrify</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
