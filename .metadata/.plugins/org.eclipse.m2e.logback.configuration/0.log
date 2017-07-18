@@ -5424,3 +5424,85 @@ org.eclipse.core.runtime.CoreException: Launch configuration TriangleTest refere
 2017-07-18 18:12:01,111 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
 2017-07-18 18:12:01,112 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-18 18:12:01,112 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:43:29,703 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-18 21:43:32,257 [Worker-9] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2017-07-18 21:43:36,489 [Worker-9] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|https://repo.maven.apache.org/maven2 in 4232 ms
+2017-07-18 21:47:39,141 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:47:39,142 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:47:39,143 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:47:39,143 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:49:48,978 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:49:48,978 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:49:48,984 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:49:48,985 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:51:16,479 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:51:16,479 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:51:16,480 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:51:16,481 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:51:24,039 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:51:24,039 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:51:24,040 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:51:24,040 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:52:03,506 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:52:03,506 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:52:03,507 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:52:03,507 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:54:11,118 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:11,118 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:54:11,119 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:11,119 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:54:48,739 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:48,740 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:54:48,741 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:48,742 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:54:51,145 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:51,145 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:54:51,147 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:54:51,147 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:55:27,680 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:55:27,680 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:55:27,681 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:55:27,682 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:56:31,288 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:56:31,288 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:56:31,289 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:56:31,289 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:57:58,769 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:57:58,770 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:57:58,770 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:57:58,771 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:58:17,121 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:58:17,121 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:58:17,122 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:58:17,122 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:58:47,409 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:58:47,410 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:58:47,410 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:58:47,411 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:59:17,102 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:59:17,103 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:59:17,104 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:59:17,104 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 21:59:41,488 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:59:41,488 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 21:59:41,489 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 21:59:41,489 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 22:00:13,781 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:00:13,781 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 22:00:13,783 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:00:13,784 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 22:00:45,785 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:00:45,785 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 22:00:45,786 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:00:45,786 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 22:01:30,644 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:01:30,645 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 22:01:30,646 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:01:30,646 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources
+2017-07-18 22:01:52,546 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Joshua\Documents\swt1\swt1\iMage
+2017-07-18 22:01:52,547 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -U clean package
+2017-07-18 22:03:47,999 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: swt1.ub6.a3:1939691:0.0.1-SNAPSHOT @ C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\pom.xml.
+2017-07-18 22:03:48,233 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:03:48,233 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\main\resources
+2017-07-18 22:03:48,235 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-18 22:03:48,235 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Joshua\Documents\swt1\swt1\iMage\iMage.geometrify-parallel\src\test\resources

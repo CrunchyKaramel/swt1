@@ -23,7 +23,15 @@ public abstract class ParallelPictureFilter extends TrianglePictureFilter {
 	private BufferedImage current;
 	private int cores;
 
-	public ParallelPictureFilter(IPointGenerator pointGenerator, int cores) {
+	/**
+	 * This constructor will never be used, as this class is abstract.
+	 * 
+	 * @param pointGenerator
+	 *            the point generator used for the primitives
+	 * @param cores
+	 *            the cores of the CPU
+	 */
+	protected ParallelPictureFilter(IPointGenerator pointGenerator, int cores) {
 		super(pointGenerator);
 		this.cores = cores;
 	}
@@ -50,10 +58,20 @@ public abstract class ParallelPictureFilter extends TrianglePictureFilter {
 		return result;
 	}
 
+	/**
+	 * Creates a grid that helps sorting the primitives.
+	 * 
+	 * @return an empty grid for primitives
+	 */
 	protected MonitoredArrayCell[][] getLevels() {
 		return this.levels;
 	}
 
+	/**
+	 * Gets the image that is currently being edited.
+	 * 
+	 * @return the edited picture
+	 */
 	protected BufferedImage getImage() {
 		return this.image;
 	}

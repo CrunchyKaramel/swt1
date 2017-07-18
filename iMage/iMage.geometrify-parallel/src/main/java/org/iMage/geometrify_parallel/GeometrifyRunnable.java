@@ -6,6 +6,9 @@ package org.iMage.geometrify_parallel;
 import org.iMage.geometrify.IPrimitive;
 
 /**
+ * runnable that creates primitives and sorts them after similarity to the
+ * picture.
+ * 
  * @author Joshua Eilebrecht
  *
  */
@@ -15,6 +18,12 @@ public class GeometrifyRunnable implements Runnable {
 	private MonitoredArrayCell[][] levels;
 	private IPrimitive currentTriangle;
 
+	/**
+	 * Creates a runnable for the filter.
+	 * 
+	 * @param filter
+	 *            the associated filter
+	 */
 	protected GeometrifyRunnable(ParallelPictureFilter filter) {
 		this.filter = filter;
 	}
