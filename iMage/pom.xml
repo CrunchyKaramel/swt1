@@ -25,6 +25,7 @@
   	<module>iMage.geometrify</module>
   	
   	<module>iMage.iLlustrate</module>
+  	<module>iMage.geometrify-parallel</module>
   </modules>
   <dependencies>
   	<dependency>
