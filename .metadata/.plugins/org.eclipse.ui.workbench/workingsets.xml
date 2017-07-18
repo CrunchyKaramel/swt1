@@ -4,9 +4,9 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495456376468_4" label="iMage" name="iMage">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.geometrify" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.geometrify-parallel" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/1939691" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.iLlustrate" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/iMage.geometrify-parallel" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1493907256228_0" label="Window Working Set" name="Aggregate for window 1493907256227"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1494260402111_1" label="Window Working Set" name="Aggregate for window 1494260402110"/>
