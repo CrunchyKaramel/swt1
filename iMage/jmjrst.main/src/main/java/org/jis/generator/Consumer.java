@@ -50,9 +50,7 @@ public class Consumer implements Runnable {
       while (producer.isDone() == false || producer.queue.size() > 0)
       {
 
-        if (m.p_monitor.isCanceled()) {
-        	break;
-        }
+        if (m.p_monitor.isCanceled()) break;
 
         Element obj = producer.queue.take();
         try

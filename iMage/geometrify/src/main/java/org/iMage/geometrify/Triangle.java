@@ -1,36 +1,19 @@
 package org.iMage.geometrify;
 
-import java.awt.Color;
 import java.awt.Point;
 
 /**
  * A triangle.
- *
- * @author Dominic Ziegler, Martin Blersch, Joshua Eilebrecht
- * @version 1.2
+ * 
+ * @author Dominic Ziegler, Martin Blersch
+ * @version 1.0
  */
-public class Triangle implements IPrimitive {
-
-	/*
-	 * All 3 points to define the outline of the triangle.
-	 */
-	Point pointA;
-	Point pointB;
-	Point pointC;
-
-	/*
-	 * color of the triangle.
-	 */
-	Color color;
-
-	/*
-	 * the bounding box of the triangle
-	 */
-	BoundingBox box;
+public class Triangle extends AbstractPrimitive {
+	private Point a, b, c;
 
 	/**
 	 * Creates a new triangle from the given vertices.
-	 *
+	 * 
 	 * @param a
 	 *            the first vertex
 	 * @param b
@@ -39,111 +22,33 @@ public class Triangle implements IPrimitive {
 	 *            the third vertex
 	 */
 	public Triangle(Point a, Point b, Point c) {
-		pointA = a;
-		pointB = b;
-		pointC = c;
-		int minX = pointA.x;
-		int maxX = pointA.x;
-		int minY = pointA.y;
-		int maxY = pointA.y;
-		if (minX > Math.min(pointB.x, pointC.x)) {
-			minX = Math.min(pointB.x, pointC.x);
-		}
-		if (maxX < Math.max(pointB.x, pointC.x)) {
-			maxX = Math.max(pointB.x, pointC.x);
-		}
-		if (minY > Math.min(pointB.y, pointC.y)) {
-			minY = Math.min(pointB.y, pointC.y);
-		}
-		if (maxY < Math.max(pointB.y, pointC.y)) {
-			maxY = Math.max(pointB.y, pointC.y);
-		}
-		box = new BoundingBox(new Point(minX, maxY), new Point(maxX, minY));
+		this.a = a;
+		this.b = b;
+		this.c = c;
+
+		Point upperLeft = new Point(Math.min(Math.min(a.x, b.x), c.x), Math.min(Math.min(a.y, b.y), c.y));
+		Point lowerRight = new Point(Math.max(Math.max(a.x, b.x), c.x), Math.max(Math.max(a.y, b.y), c.y));
+
+		setBoundingBox(new BoundingBox(upperLeft, lowerRight));
+	}
+
+	private static long crossProduct(Point point, Point trianglePointA, Point trianglePointB) {
+		int ax = point.x - trianglePointA.x;
+		int ay = point.y - trianglePointA.y;
+		int bx = trianglePointA.x - trianglePointB.x;
+		int by = trianglePointA.y - trianglePointB.y;
+
+		return ax * by - ay * bx;
 	}
 
 	@Override
-	public boolean isInsidePrimitive(Point p) {
-		if (pointA.y == pointB.y) {
-			if (pointC.y > pointA.y && p.y < pointA.y) {
-				return false;
-			} else if (p.y > pointA.y) {
-				return false;
-			}
-		} else if (pointA.x == pointB.x) {
-			if (pointC.x > pointA.x && p.x < pointA.x) {
-				return false;
-			} else if (p.x > pointA.x) {
-				return false;
-			}
-		} else {
-			double incline = (pointA.getY() - pointB.getY()) / (pointA.getX() - pointB.getX());
-			double startY = pointA.getY() - incline * pointA.getX();
-			if (pointC.getY() > incline * pointC.getX() + startY && p.getY() < incline * p.getX() + startY) {
-				return false;
-			} else if (pointC.getY() < incline * pointC.getX() + startY && p.getY() > incline * p.getX() + startY) {
-				return false;
-			}
-		}
+	public boolean isInsidePrimitive(Point point) {
+		boolean b1, b2, b3;
 
-		if (pointA.y == pointC.y) {
-			if (pointB.y > pointA.y && p.y < pointA.y) {
-				return false;
-			} else if (p.y > pointA.y) {
-				return false;
-			}
-		} else if (pointA.x == pointC.x) {
-			if (pointB.x > pointA.x && p.x < pointA.x) {
-				return false;
-			} else if (p.x > pointA.x) {
-				return false;
-			}
-		} else {
-			double incline = (pointA.getY() - pointC.getY()) / (pointA.getX() - pointC.getX());
-			double startY = pointA.getY() - incline * pointA.getX();
-			if (pointB.getY() > incline * pointB.getX() + startY && p.getY() < incline * p.getX() + startY) {
-				return false;
-			} else if (pointB.getY() < incline * pointB.getX() + startY && p.getY() > incline * p.getX() + startY) {
-				return false;
-			}
-		}
+		b1 = crossProduct(point, a, b) > 0;
+		b2 = crossProduct(point, b, c) > 0;
+		b3 = crossProduct(point, c, a) > 0;
 
-		if (pointC.y == pointB.y) {
-			if (pointA.y > pointC.y && p.y < pointC.y) {
-				return false;
-			} else if (p.y > pointC.y) {
-				return false;
-			}
-		} else if (pointC.x == pointB.x) {
-			if (pointA.x > pointC.x && p.x < pointC.x) {
-				return false;
-			} else if (p.x > pointC.x) {
-				return false;
-			}
-		} else {
-			double incline = (pointC.getY() - pointB.getY()) / (pointC.getX() - pointB.getX());
-			double startY = pointC.getY() - incline * pointC.getX();
-			if (pointA.getY() > incline * pointA.getX() + startY && p.getY() < incline * p.getX() + startY) {
-				return false;
-			} else if (pointA.getY() < incline * pointA.getX() + startY && p.getY() > incline * p.getX() + startY) {
-				return false;
-			}
-		}
-		return true;
+		return (b1 == b2) && (b2 == b3);
 	}
-
-	@Override
-	public BoundingBox getBoundingBox() {
-		return box;
-	}
-
-	@Override
-	public Color getColor() {
-		return color;
-	}
-
-	@Override
-	public void setColor(Color c) {
-		color = c;
-	}
-
 }

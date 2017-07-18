@@ -1,84 +1,43 @@
 package org.iMage.geometrify;
 
-import java.awt.Color;
+import static org.junit.Assert.*;
+
 import java.awt.Point;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Tests Triangle for proper functionality.
+ * Test class for {@link Triangle}.
  * 
- * @author Joshua Eilebrecht
+ * @author Dominic Ziegler
  * @version 1.0
- *
  */
-public class TriangleTest {
-	static Triangle testTriangle;
-	static Color testColor;
-
-	/**
-	 * Creates a triangle and a color for the triangle for testing purposes.
-	 * 
-	 * @throws Exception
-	 *             any type of exception
-	 */
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-		testTriangle = new Triangle(new Point(12, 5), new Point(6, 77), new Point(12, 12));
-		int r = 14;
-		int g = 3;
-		int b = 9;
-		testColor = Color.cyan;
-		testTriangle.setColor(testColor);
+public class TriangleTest extends AbstractPrimitiveTest {
+	@Override
+	public void setUp() {
+		Point a = new Point(1, 1);
+		Point b = new Point(10, 1);
+		Point c = new Point(1, 10);
+		primitive = new Triangle(a, b, c);
 	}
 
 	/**
-	 * Tears down the test.
-	 * 
-	 * @throws Exception
-	 *             any type of exception
-	 */
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	/**
-	 * Tests whether isInsidePrimitive() detects a point outside the triangle, a
-	 * point of the triangle, a point on the edge of it and a point inside it.
+	 * Test method for {@link Triangle#isInsidePrimitive(Point)}.
 	 */
 	@Test
 	public void testIsInsidePrimitive() {
-		assert (!testTriangle.isInsidePrimitive(new Point(4, 4)));
-		assert (testTriangle.isInsidePrimitive(new Point(6, 77)));
-		assert (testTriangle.isInsidePrimitive(new Point(8, 53)));
-		assert (testTriangle.isInsidePrimitive(new Point(9, 42)));
+		assertInside(5, 5);
+		assertOutside(6, 6);
 	}
 
 	/**
-	 * Test whether the bounding box of the tested triangle has the right size.
+	 * Test method for {@link Triangle#getBoundingBox()}.
 	 */
 	@Test
 	public void testGetBoundingBox() {
-		int[] upperLeft = { testTriangle.getBoundingBox().getUpperLeftCorner().x,
-				testTriangle.getBoundingBox().getUpperLeftCorner().y };
-		int[] lowerRight = { testTriangle.getBoundingBox().getLowerRightCorner().x,
-				testTriangle.getBoundingBox().getLowerRightCorner().y };
-		assert (upperLeft[0] == 6);
-		assert (upperLeft[1] == 77);
-		assert (lowerRight[0] == 12);
-		assert (lowerRight[1] == 5);
+		BoundingBox bbox = primitive.getBoundingBox();
+		assertEquals(new Point(1, 1), bbox.getUpperLeftCorner());
+		assertEquals(new Point(10, 10), bbox.getLowerRightCorner());
 	}
-
-	/**
-	 * tests whether the tested triangle returns the right color or not.
-	 */
-	@Test
-	public void testGetColor() {
-		assert (testTriangle.getColor().getRed() == testColor.getRed());
-		assert (testTriangle.getColor().getGreen() == testColor.getGreen());
-		assert (testTriangle.getColor().getBlue() == testColor.getBlue());
-	}
-
 }

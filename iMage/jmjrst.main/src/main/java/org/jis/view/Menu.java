@@ -15,7 +15,10 @@
  */
 package org.jis.view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.net.URL;
+import java.util.Iterator;
 
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
@@ -23,6 +26,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.UIManager;
 
+import org.iMage.plugins.JmjrstPlugin;
+import org.iMage.plugins.PluginManager;
 import org.jis.Main;
 import org.jis.listner.MenuListner;
 
@@ -39,7 +44,6 @@ public class Menu extends JMenuBar {
 	public JMenuItem gener;
 	public JMenuItem zippen;
 	public JMenuItem gallerie;
-	public JMenu loadPlugIn;
 	public JMenuItem exit;
 	public JMenuItem set_quality;
 	public JMenuItem info;
@@ -77,8 +81,6 @@ public class Menu extends JMenuBar {
 		url = ClassLoader.getSystemResource("icons/text-html.png");
 		gallerie.setIcon(new ImageIcon(url));
 
-		loadPlugIn = new JMenu(m.mes.getString("Menu.17"));
-
 		exit = new JMenuItem(m.mes.getString("Menu.5"));
 		url = ClassLoader.getSystemResource("icons/system-log-out.png");
 		exit.setIcon(new ImageIcon(url));
@@ -109,7 +111,13 @@ public class Menu extends JMenuBar {
 		datei.add(gener);
 		datei.add(zippen);
 		datei.add(gallerie);
-		datei.add(loadPlugIn);
+
+		// Add plug-in menu as requested in exercise 1 of sheet 3
+		JMenu swt1Plugins = createSwt1PluginMenu(m);
+		if (swt1Plugins.getMenuComponentCount() > 0) {
+			datei.add(swt1Plugins);
+		}
+
 		datei.addSeparator();
 		datei.add(exit);
 		option.add(optionen_look);
@@ -119,6 +127,7 @@ public class Menu extends JMenuBar {
 		about.add(info);
 		this.add(datei);
 		this.add(option);
+
 		this.add(about);
 
 		MenuListner al = new MenuListner(m, this);
@@ -157,12 +166,66 @@ public class Menu extends JMenuBar {
 					.equalsIgnoreCase("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel")) //$NON-NLS-1$
 				optionen_look.add(look_nimbus);
 		}
-		/**
-		 * List<JmjrstPlugin> list = PluginManager.getPlugins(); if (list.size()
-		 * == 0) { JMenuItem plugin = new JMenuItem("(no plugins available!)");
-		 * plugin.setEnabled(false); loadPlugIn.add(plugin); } else { for (int i
-		 * = 0; i < list.size(); i++) { loadPlugIn.add(new
-		 * JMenuItem(list.get(i).getName())); } }
-		 */
+	}
+
+	/**
+	 * Load all SWT1-Plug-Ins (that implement the interface JmjrstPlugins)
+	 * 
+	 * @see org.jis.plugins.JmjrstPlugin JmjrstPlugins
+	 * 
+	 * @return A menu containing two MenuItems for each JmjrstPlugin (one to run
+	 *         it and one to configure it).
+	 */
+	private JMenu createSwt1PluginMenu(Main m) {
+		// SWT1 plug-in Menu
+		JMenu swt1Plugins = new JMenu("Load plug-in");
+
+		Iterator<JmjrstPlugin> iter = PluginManager.getPlugins().iterator();
+
+		// Load plug-ins
+		while (iter.hasNext()) {
+			JmjrstPlugin plugin = iter.next();
+			plugin.init(m);
+
+			// add menu item for plug-in
+			JMenuItem mi = createMenuItem(plugin);
+			swt1Plugins.add(mi);
+
+			// add menu item for plug-in configuration if available
+			if (plugin.isConfigurable()) {
+				JMenuItem cmi = createConfigMenuItem(plugin);
+				swt1Plugins.add(cmi);
+			}
+
+		}
+		// display error message
+		if (swt1Plugins.getMenuComponentCount() == 0) {
+			JMenuItem err = new JMenuItem("(No plug-ins available!)");
+			err.setEnabled(false);
+			swt1Plugins.add(err);
+		}
+		return swt1Plugins;
+	}
+
+	private JMenuItem createMenuItem(final JmjrstPlugin plugin) {
+		JMenuItem mi = new JMenuItem(plugin.getMenuText());
+		mi.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				plugin.run(); // alle Bilder: main.list.getPictures()
+			}
+		});
+		return mi;
+	}
+
+	private JMenuItem createConfigMenuItem(final JmjrstPlugin plugin) {
+		JMenuItem cmi = new JMenuItem(plugin.getMenuText() + " (Configure)");
+		cmi.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				plugin.configure();
+			}
+		});
+		return cmi;
 	}
 }
